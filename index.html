@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+
+<html class="scroll-smooth" lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VakuPack™ | Vacuum-Compression Travel Backpack</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>VakuPack™ | Vacuum Compression Travel Backpack</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
         @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
         body { font-family: 'Plus Jakarta Sans', sans-serif; }
         .studio-pedestal {
@@ -17,13 +18,13 @@
         }
         .cart-pop { animation: pulsePop 0.35s ease; }
     </style>
-    <meta name="description" content="Fit 7 outfits where 4 used to go. VakuPack™ Pro vacuum-compression travel backpack includes a free USB-C turbo pump and fits Spirit, Frontier & Delta under-seat sizers." />
-    <meta property="og:type" content="product" />
-    <meta property="og:title" content="VakuPack™ Pro — Vacuum-Compression Travel Backpack + Free USB-C Pump" />
-    <meta property="og:description" content="Shrink bulky clothes by 50%+ in 15 seconds and pay $0 airline baggage fees. 4.9★ rated by 4,280+ flyers." />
-    <meta property="og:image" content="images/product_1.png" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <script type="application/ld+json">
+<meta content="Fit 7 outfits where 4 used to go. VakuPack™ Pro vacuum compression travel backpack includes a free USB-C turbo pump and fits Spirit, Frontier &amp; Delta under seat sizers." name="description"/>
+<meta content="product" property="og:type"/>
+<meta content="VakuPack™ Pro, Vacuum Compression Travel Backpack + Free USB-C Pump" property="og:title"/>
+<meta content="Shrink bulky clothes by 50%+ in 15 seconds and pay $0 airline baggage fees. 4.9★ rated by 4,280+ flyers." property="og:description"/>
+<meta content="images/product_1.png" property="og:image"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<script type="application/ld+json">
     {
       "@context": "https://schema.org/",
       "@type": "Product",
@@ -46,811 +47,759 @@
       }
     }
     </script>
+ 
+
+
 </head>
 <body class="bg-white text-slate-900 antialiased selection:bg-emerald-500 selection:text-white">
-
-    <!-- Top Announcement Bar -->
-    <div class="bg-slate-950 text-white text-center py-2.5 px-4 text-xs sm:text-sm font-semibold tracking-wide">
-        <span class="text-emerald-400 font-extrabold">HOLIDAY TRAVEL DROP:</span> Free $49 USB-C Turbo Pump Included + Free Express Shipping • Ends in <span id="timer" class="font-mono text-emerald-400">03:44:19</span>
-    </div>
-
-    <!-- Main Sticky Navigation Header (Home • About Us • Contact Us + Cart) -->
-    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-100">
-        <div class="max-w-6xl mx-auto px-4 sm:px-5 h-16 flex items-center justify-between gap-2">
-            <button onclick="switchPage('home')" class="text-xl sm:text-2xl font-extrabold tracking-tight text-slate-950 flex items-center gap-1.5 shrink-0">
-                <span class="w-3 h-3 rounded-full bg-emerald-500 inline-block"></span>VakuPack™
+<!-- Top Announcement Bar -->
+<div class="bg-slate-950 text-white text-center py-2.5 px-4 text-xs sm:text-sm font-semibold tracking-wide">
+<span class="text-emerald-400 font-extrabold">Holiday sale:</span> Free $49 USB-C pump and fast shipping. Ends soon. <span class="font-mono text-emerald-400" id="timer">03:44:19</span>
+</div>
+<!-- Main Sticky Navigation Header (Home • About Us • Contact Us + Cart) -->
+<header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-100">
+<div class="max-w-6xl mx-auto px-4 sm:px-5 h-16 flex items-center justify-between gap-2">
+<button class="text-xl sm:text-2xl font-extrabold tracking-tight text-slate-950 flex items-center gap-1.5 shrink-0" onclick="switchPage('home')">
+<span class="w-3 h-3 rounded-full bg-emerald-500 inline-block"></span>VakuPack™
             </button>
-
-            <!-- Page Links (Visible on Mobile & Desktop) -->
-            <nav class="flex items-center gap-3 sm:gap-7 text-xs sm:text-sm font-bold text-slate-600">
-                <button onclick="switchPage('home')" data-nav="home" class="nav-link text-slate-950 border-b-2 border-emerald-500 py-1 transition">
+<!-- Page Links (Visible on Mobile & Desktop) -->
+<nav class="flex items-center gap-3 sm:gap-7 text-xs sm:text-sm font-bold text-slate-600">
+<button class="nav-link text-slate-950 border-b-2 border-emerald-500 py-1 transition" data-nav="home" onclick="switchPage('home')">
                     Home
                 </button>
-                <button onclick="switchPage('about')" data-nav="about" class="nav-link hover:text-slate-950 py-1 border-b-2 border-transparent transition">
-                    About Us
+<button class="nav-link hover:text-slate-950 py-1 border-b-2 border-transparent transition" data-nav="about" onclick="switchPage('about')">
+                    About
                 </button>
-                <button onclick="switchPage('contact')" data-nav="contact" class="nav-link hover:text-slate-950 py-1 border-b-2 border-transparent transition">
-                    Contact Us
+<button class="nav-link hover:text-slate-950 py-1 border-b-2 border-transparent transition" data-nav="contact" onclick="switchPage('contact')">
+                    Contact
                 </button>
-                <button onclick="jumpToSection('reviews')" class="hidden md:inline-block hover:text-slate-950 py-1 transition">
+<button class="hidden md:inline-block hover:text-slate-950 py-1 transition" onclick="jumpToSection('reviews')">
                     Reviews (4,280)
                 </button>
-            </nav>
-
-            <!-- Header Right Actions -->
-            <div class="flex items-center gap-2 shrink-0">
-                <button onclick="toggleCart(true)" aria-label="Open Cart" class="relative p-2 rounded-full border border-slate-200 hover:border-emerald-500 text-slate-900 transition">
-                    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
-                    </svg>
-                    <span id="header-cart-badge" class="absolute -top-1.5 -right-1.5 w-5 h-5 rounded-full bg-emerald-600 text-white text-[10px] font-extrabold flex items-center justify-center">0</span>
+</nav>
+<!-- Header Right Actions -->
+<div class="flex items-center gap-2 shrink-0">
+<button aria-label="Open Cart" class="relative p-2 rounded-full border border-slate-200 hover:border-emerald-500 text-slate-900 transition" onclick="toggleCart(true)">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+<path d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+<span class="absolute -top-1.5 -right-1.5 w-5 h-5 rounded-full bg-emerald-600 text-white text-[10px] font-extrabold flex items-center justify-center" id="header-cart-badge">0</span>
+</button>
+<button class="hidden sm:inline-block bg-slate-950 hover:bg-emerald-600 text-white text-xs sm:text-sm font-bold px-4 py-2 rounded-full transition shadow-sm" onclick="jumpToSection('offer-box')">
+                    Shop now
                 </button>
-                <button onclick="jumpToSection('offer-box')" class="hidden sm:inline-block bg-slate-950 hover:bg-emerald-600 text-white text-xs sm:text-sm font-bold px-4 py-2 rounded-full transition shadow-sm">
-                    Shop Now
-                </button>
-            </div>
-        </div>
-    </header>
-
-    <!-- ========================================================= -->
-    <!-- PAGE 1: HOME (FULL PRODUCT SHOWCASE + EXTRA INFO)         -->
-    <!-- ========================================================= -->
-    <div id="page-home" class="page-view">
-        <main class="max-w-6xl mx-auto px-5 pt-8 pb-24">
-            <div class="grid lg:grid-cols-12 gap-10 lg:gap-12 items-start">
-
-                <!-- Left Column: Seamless Video + Clean Product Photo Gallery -->
-                <div class="lg:col-span-6 lg:sticky lg:top-24">
-                    <div class="studio-pedestal rounded-3xl p-6 sm:p-8 border border-slate-200/80 shadow-sm relative overflow-hidden">
-                        <div class="flex justify-between items-center mb-3">
-                            <span class="bg-white/95 border border-slate-200 text-slate-900 text-xs font-bold px-3 py-1 rounded-full shadow-xs">
-                                ✈️ Fits Spirit, Frontier & Delta Sizers
+</div>
+</div>
+</header>
+<!-- ========================================================= -->
+<!-- PAGE 1: HOME (FULL PRODUCT SHOWCASE + EXTRA INFO)         -->
+<!-- ========================================================= -->
+<div class="page-view" id="page-home">
+<main class="max-w-6xl mx-auto px-5 pt-8 pb-24">
+<div class="grid lg:grid-cols-12 gap-10 lg:gap-12 items-start">
+<!-- Left Column: Seamless Video + Clean Product Photo Gallery -->
+<div class="lg:col-span-6 lg:sticky lg:top-24">
+<div class="studio-pedestal rounded-3xl p-6 sm:p-8 border border-slate-200/80 shadow-sm relative overflow-hidden">
+<div class="flex justify-between items-center mb-3">
+<span class="bg-white/95 border border-slate-200 text-slate-900 text-xs font-bold px-3 py-1 rounded-full shadow-xs">
+                                Fits major airline sizers
                             </span>
-                            <span class="bg-emerald-500 text-white text-xs font-extrabold px-3 py-1 rounded-full shadow-xs">
-                                168-HR AIRTIGHT HOLD
+<span class="bg-emerald-500 text-white text-xs font-extrabold px-3 py-1 rounded-full shadow-xs">
+                                Airtight seal for 7 days
                             </span>
-                        </div>
-
-                        <div class="my-3 flex flex-col items-center justify-center">
-                            
-    <div id="stage-video" class="w-full max-w-[340px] mx-auto rounded-2xl overflow-hidden shadow-md bg-white aspect-[4/5] relative">
-        <video autoplay loop muted playsinline preload="auto" poster="images/product_1.png" class="w-full h-full object-cover">
-            <source src="media/clip_1_hero.mp4?v=1795507254" type="video/mp4">
-        </video>
-    </div>
-    <img id="stage-img" src="images/product_1.png" alt="VakuPack™ Pro Vacuum-Compression Backpack" class="hidden w-full max-h-[380px] object-contain drop-shadow-2xl transition-all duration-300" />
-    
-                            <div class="flex gap-2.5 mt-4 justify-center flex-wrap">
-                                <button onclick="showStage('video', null, this)" aria-label="Play video" class="stage-thumb relative w-16 h-16 rounded-xl bg-white border-2 border-emerald-500 p-1 hover:border-emerald-500 transition overflow-hidden"><img src="images/video_thumb.jpg" alt="" class="w-full h-full object-cover rounded-lg" /><span class="absolute inset-0 flex items-center justify-center pointer-events-none"><span class="w-7 h-7 rounded-full bg-white/90 text-slate-900 text-xs flex items-center justify-center shadow-md pl-0.5">&#9654;</span></span></button><button onclick="showStage('img', 'images/product_1.png', this)" class="stage-thumb w-16 h-16 rounded-xl bg-white border-2 border-slate-200 p-1 hover:border-emerald-500 transition"><img src="images/product_1.png" alt="Product angle" class="w-full h-full object-contain" /></button><button onclick="showStage('img', 'images/product_2.png', this)" class="stage-thumb w-16 h-16 rounded-xl bg-white border-2 border-slate-200 p-1 hover:border-emerald-500 transition"><img src="images/product_2.png" alt="Product angle" class="w-full h-full object-contain" /></button><button onclick="showStage('img', 'images/product_3.png', this)" class="stage-thumb w-16 h-16 rounded-xl bg-white border-2 border-slate-200 p-1 hover:border-emerald-500 transition"><img src="images/product_3.png" alt="Product angle" class="w-full h-full object-contain" /></button><button onclick="showStage('img', 'images/product_4.png', this)" class="stage-thumb w-16 h-16 rounded-xl bg-white border-2 border-slate-200 p-1 hover:border-emerald-500 transition"><img src="images/product_4.png" alt="Product angle" class="w-full h-full object-contain" /></button><button onclick="showStage('img', 'images/product_5.png', this)" class="stage-thumb w-16 h-16 rounded-xl bg-white border-2 border-slate-200 p-1 hover:border-emerald-500 transition"><img src="images/product_5.png" alt="Product angle" class="w-full h-full object-contain" /></button>
-                            </div>
-                        </div>
-
-                        <div class="grid grid-cols-3 gap-2 pt-4 mt-4 border-t border-slate-200/70 text-center">
-                            <div class="bg-white/90 rounded-xl py-2.5 px-2">
-                                <div class="text-xs font-extrabold text-slate-950">7 Outfits → 4</div>
-                                <div class="text-[11px] text-slate-500">50%+ Shrinkage</div>
-                            </div>
-                            <div class="bg-white/90 rounded-xl py-2.5 px-2">
-                                <div class="text-xs font-extrabold text-slate-950">18" × 14" × 8"</div>
-                                <div class="text-[11px] text-slate-500">Under-Seat Legal</div>
-                            </div>
-                            <div class="bg-white/90 rounded-xl py-2.5 px-2">
-                                <div class="text-xs font-extrabold text-slate-950">17.3" Vault</div>
-                                <div class="text-[11px] text-slate-500">Lay-Flat TSA Sleeve</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Right Column: Persuasive Copy, Bundle Selector & Add to Cart -->
-                <div class="lg:col-span-6" id="offer-box">
-                    <div class="flex items-center gap-2 mb-3">
-                        <div class="flex text-amber-400 text-sm">★★★★★</div>
-                        <span class="text-xs font-bold text-slate-700">4.9/5 Rating (4,280+ Flyers)</span>
-                        <span class="text-slate-300">•</span>
-                        <span class="text-xs font-semibold text-emerald-600">In Stock & Ready to Ship</span>
-                    </div>
-
-                    <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-slate-950 leading-[1.08] mb-4">
-                        Fit 7 Outfits Where 4 Used to Go. Pay <span class="text-emerald-600">$0 Baggage Fees.</span>
-                    </h1>
-
-                    <p class="text-slate-600 text-base sm:text-lg leading-relaxed mb-5">
-                        Stop donating $75–$99 to airline gate agents every time you fly. Pack bulky winter hoodies, sneakers, and jeans into the <strong>built-in airtight TPU vacuum chamber</strong>, press one button on the included USB-C micro-pump, and watch your bag shrink flat in <strong>15 seconds</strong>.
+</div>
+<div class="my-3 flex flex-col items-center justify-center">
+<div class="w-full max-w-[340px] mx-auto rounded-2xl overflow-hidden shadow-md bg-white aspect-[4/5] relative" id="stage-video">
+<video autoplay="" class="w-full h-full object-cover" loop="" muted="" playsinline="" poster="images/product_1.png" preload="auto">
+<source src="media/clip_1_hero.mp4?v=1795507254" type="video/mp4"/>
+</video>
+</div>
+<img alt="VakuPack™ Pro Vacuum-Compression Backpack" class="hidden w-full max-h-[380px] object-contain drop-shadow-2xl transition-all duration-300" id="stage-img" src="images/product_1.png"/>
+<div class="flex gap-2.5 mt-4 justify-center flex-wrap">
+<button aria-label="Play video" class="stage-thumb relative w-16 h-16 rounded-xl bg-white border-2 border-emerald-500 p-1 hover:border-emerald-500 transition overflow-hidden" onclick="showStage('video', null, this)"><img alt="" class="w-full h-full object-cover rounded-lg" src="images/video_thumb.jpg"/><span class="absolute inset-0 flex items-center justify-center pointer-events-none"><span class="w-7 h-7 rounded-full bg-white/90 text-slate-900 text-xs flex items-center justify-center shadow-md pl-0.5">▶</span></span></button><button class="stage-thumb w-16 h-16 rounded-xl bg-white border-2 border-slate-200 p-1 hover:border-emerald-500 transition" onclick="showStage('img', 'images/product_1.png', this)"><img alt="Product angle" class="w-full h-full object-contain" src="images/product_1.png"/></button><button class="stage-thumb w-16 h-16 rounded-xl bg-white border-2 border-slate-200 p-1 hover:border-emerald-500 transition" onclick="showStage('img', 'images/product_2.png', this)"><img alt="Product angle" class="w-full h-full object-contain" src="images/product_2.png"/></button><button class="stage-thumb w-16 h-16 rounded-xl bg-white border-2 border-slate-200 p-1 hover:border-emerald-500 transition" onclick="showStage('img', 'images/product_3.png', this)"><img alt="Product angle" class="w-full h-full object-contain" src="images/product_3.png"/></button><button class="stage-thumb w-16 h-16 rounded-xl bg-white border-2 border-slate-200 p-1 hover:border-emerald-500 transition" onclick="showStage('img', 'images/product_4.png', this)"><img alt="Product angle" class="w-full h-full object-contain" src="images/product_4.png"/></button><button class="stage-thumb w-16 h-16 rounded-xl bg-white border-2 border-slate-200 p-1 hover:border-emerald-500 transition" onclick="showStage('img', 'images/product_5.png', this)"><img alt="Product angle" class="w-full h-full object-contain" src="images/product_5.png"/></button>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-2 pt-4 mt-4 border-t border-slate-200/70 text-center">
+<div class="bg-white/90 rounded-xl py-2.5 px-2">
+<div class="text-xs font-extrabold text-slate-950">Pack 7 outfits easily</div>
+<div class="text-[11px] text-slate-500">Shrinks volume by 50%</div>
+</div>
+<div class="bg-white/90 rounded-xl py-2.5 px-2">
+<div class="text-xs font-extrabold text-slate-950">18" × 14" × 8"</div>
+<div class="text-[11px] text-slate-500">Fits under airline seats</div>
+</div>
+<div class="bg-white/90 rounded-xl py-2.5 px-2">
+<div class="text-xs font-extrabold text-slate-950">17.3" laptop sleeve</div>
+<div class="text-[11px] text-slate-500">TSA lay flat design</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Persuasive Copy, Bundle Selector & Add to Cart -->
+<div class="lg:col-span-6" id="offer-box">
+<div class="flex items-center gap-2 mb-3">
+<div class="flex text-amber-400 text-sm">★★★★★</div>
+<span class="text-xs font-bold text-slate-700">4.9/5 rating (4,280+ flyers)</span>
+<span class="text-slate-300">•</span>
+<span class="text-xs font-semibold text-emerald-600">In stock. Ready to ship.</span>
+</div>
+<h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-slate-950 leading-[1.08] mb-4">
+                        Pack twice as much. Pay <span class="text-emerald-600">$0 baggage fees.</span>
+</h1>
+<p class="text-slate-600 text-base sm:text-lg leading-relaxed mb-5">
+                        Skip the $75 to $99 gate fees. Pack hoodies, jeans, and shoes inside the <strong>airtight vacuum compartment</strong>, press the included USB-C pump, and compress it flat in <strong>15 seconds.</strong>.
                     </p>
-
-                    <!-- Benefit Bullets -->
-                    <div class="grid sm:grid-cols-2 gap-2.5 mb-6 text-xs sm:text-sm font-semibold text-slate-800">
-                        <div class="flex items-center gap-2 bg-slate-50 px-3 py-2 rounded-xl border border-slate-100">
-                            <span class="text-emerald-600 font-extrabold">✓</span> Free USB-C Turbo Pump Included
+<!-- Benefit Bullets -->
+<div class="grid sm:grid-cols-2 gap-2.5 mb-6 text-xs sm:text-sm font-semibold text-slate-800">
+<div class="flex items-center gap-2 bg-slate-50 px-3 py-2 rounded-xl border border-slate-100">
+<span class="text-emerald-600 font-extrabold">✓</span> Free USB-C pump included
                         </div>
-                        <div class="flex items-center gap-2 bg-slate-50 px-3 py-2 rounded-xl border border-slate-100">
-                            <span class="text-emerald-600 font-extrabold">✓</span> Waterproof Odor-Lock Laundry Pocket
+<div class="flex items-center gap-2 bg-slate-50 px-3 py-2 rounded-xl border border-slate-100">
+<span class="text-emerald-600 font-extrabold">✓</span> Smell proof laundry pocket
                         </div>
-                        <div class="flex items-center gap-2 bg-slate-50 px-3 py-2 rounded-xl border border-slate-100">
-                            <span class="text-emerald-600 font-extrabold">✓</span> 180° Lay-Flat 17.3" Laptop Vault
+<div class="flex items-center gap-2 bg-slate-50 px-3 py-2 rounded-xl border border-slate-100">
+<span class="text-emerald-600 font-extrabold">✓</span> 180 degree 17.3" laptop sleeve
                         </div>
-                        <div class="flex items-center gap-2 bg-slate-50 px-3 py-2 rounded-xl border border-slate-100">
-                            <span class="text-emerald-600 font-extrabold">✓</span> 900D Tear-Proof Water-Repellent Shell
+<div class="flex items-center gap-2 bg-slate-50 px-3 py-2 rounded-xl border border-slate-100">
+<span class="text-emerald-600 font-extrabold">✓</span> Water resistant 900D shell
                         </div>
-                    </div>
-
-                    <!-- Bundle Selector Cards -->
-                    <div class="space-y-3 mb-5">
-                        <div class="text-xs font-extrabold uppercase tracking-wider text-slate-500 mb-2">Choose Your Travel Kit</div>
-
-                        <label onclick="selectBundle('single')" id="card-single" class="block cursor-pointer rounded-2xl border-2 border-slate-200 p-4 transition hover:border-slate-400">
-                            <div class="flex items-center justify-between">
-                                <div class="flex items-center gap-3">
-                                    <input type="radio" name="bundle" id="radio-single" class="w-4 h-4 accent-emerald-600">
-                                    <div>
-                                        <div class="font-bold text-slate-950 text-base">1× VakuPack™ Pro + Free USB-C Pump</div>
-                                        <div class="text-xs text-slate-500">Solo Flyer Kit • Free Tracked Shipping</div>
-                                    </div>
-                                </div>
-                                <div class="text-right">
-                                    <div class="font-extrabold text-lg text-slate-950">$54.99</div>
-                                    <div class="text-xs text-slate-400 line-through">$119.99</div>
-                                </div>
-                            </div>
-                        </label>
-
-                        <label onclick="selectBundle('bogo')" id="card-bogo" class="block cursor-pointer rounded-2xl border-2 border-emerald-500 bg-emerald-50/40 p-4 relative transition shadow-sm">
-                            <span class="absolute -top-3 right-4 bg-emerald-500 text-white text-[10px] font-extrabold uppercase tracking-wider px-3 py-0.5 rounded-full shadow-xs">
-                                Most Popular • Buy 1 Get 1 Free
+</div>
+<!-- Bundle Selector Cards -->
+<div class="space-y-3 mb-5">
+<div class="text-xs font-extrabold uppercase tracking-wider text-slate-500 mb-2">Choose your bundle</div>
+<label class="block cursor-pointer rounded-2xl border-2 border-slate-200 p-4 transition hover:border-slate-400" id="card-single" onclick="selectBundle('single')">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<input class="w-4 h-4 accent-emerald-600" id="radio-single" name="bundle" type="radio"/>
+<div>
+<div class="font-bold text-slate-950 text-base">1x VakuPack Pro + Free USB-C pump</div>
+<div class="text-xs text-slate-500">Solo kit with free shipping</div>
+</div>
+</div>
+<div class="text-right">
+<div class="font-extrabold text-lg text-slate-950">$54.99</div>
+<div class="text-xs text-slate-400 line-through">$119.99</div>
+</div>
+</div>
+</label>
+<label class="block cursor-pointer rounded-2xl border-2 border-emerald-500 bg-emerald-50/40 p-4 relative transition shadow-sm" id="card-bogo" onclick="selectBundle('bogo')">
+<span class="absolute -top-3 right-4 bg-emerald-500 text-white text-[10px] font-extrabold uppercase tracking-wider px-3 py-0.5 rounded-full shadow-xs">
+                                Most popular. Buy 1 get 1 free
                             </span>
-                            <div class="flex items-center justify-between">
-                                <div class="flex items-center gap-3">
-                                    <input type="radio" name="bundle" id="radio-bogo" checked class="w-4 h-4 accent-emerald-600">
-                                    <div>
-                                        <div class="font-extrabold text-slate-950 text-base">2× VakuPack™ Pros + 2× USB-C Pumps</div>
-                                        <div class="text-xs text-emerald-700 font-semibold">Buy 1 Get 1 Free ($39.99/bag) • Priority Express Shipping</div>
-                                    </div>
-                                </div>
-                                <div class="text-right">
-                                    <div class="font-extrabold text-xl text-slate-950">$79.99</div>
-                                    <div class="text-xs text-slate-400 line-through">$239.98</div>
-                                </div>
-                            </div>
-                        </label>
-                    </div>
-
-                    <!-- Dual Action Buttons: Add to Cart (Opens Pop-Out Cart) + Express Checkout -->
-                    <div class="grid sm:grid-cols-12 gap-3">
-                        <button onclick="addSelectedBundleToCart()" class="sm:col-span-5 flex items-center justify-center gap-2 bg-slate-950 hover:bg-slate-800 text-white font-extrabold text-base py-4 px-5 rounded-2xl transition cursor-pointer">
-                            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
-                            </svg>
-                            <span>Add to Cart</span>
-                        </button>
-                        <a id="main-cta" href="https://buy.stripe.com/dRm8wP1vn6if8dN8N89sk01" class="sm:col-span-7 flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white font-extrabold text-base sm:text-lg py-4 px-6 rounded-2xl shadow-lg shadow-emerald-600/20 transition transform active:scale-[0.99]">
-                            <span>BUY NOW — $79.99</span>
-                            <span>→</span>
-                        </a>
-                    </div>
-
-                                        <div class="mt-3.5 bg-emerald-50/80 border border-emerald-200/80 rounded-2xl px-4 py-2.5 flex items-center justify-between text-xs">
-                        <div class="flex items-center gap-2 font-bold text-slate-900">
-                            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-                            <span>Order today → <span class="text-emerald-700 font-extrabold">Arrives by <span id="est-delivery-range">next week</span></span></span>
-                        </div>
-                        <span class="font-extrabold text-emerald-700 uppercase tracking-wider text-[10px]">FREE Tracked</span>
-                    </div>
-
-                    <div class="grid grid-cols-3 gap-2 mt-3 pt-3 border-t border-slate-100 text-center text-xs text-slate-600 font-medium">
-                        <div>🛡️ 30-Day Money Back</div>
-                        <div>✈️ TSA-Approved Pump</div>
-                        <div>🔒 256-Bit SSL Checkout</div>
-                    </div>
-
-                    <!-- Expanded Technical & Buyer Objection Accordion -->
-                    <div id="specs" class="mt-8 border-t border-slate-200 divide-y divide-slate-200">
-                        <details class="py-3.5 group" open>
-                            <summary class="flex justify-between items-center font-bold text-sm text-slate-950 cursor-pointer list-none">
-                                <span>Full Dimensions, Capacity & What’s in the Box</span>
-                                <span class="text-slate-400 group-open:rotate-180 transition">▼</span>
-                            </summary>
-                            <ul class="mt-3 text-sm text-slate-600 space-y-1.5 pl-1">
-                                <li>• <strong>Compressed Size:</strong> 18" × 14" × 8" (45 × 35 × 20 cm) — slides smoothly under the seat on Spirit, Frontier, Ryanair, Delta, United & American</li>
-                                <li>• <strong>Packing Power:</strong> Holds up to 5–7 days of clothing (45L uncompressed capacity, equivalent to a 24" rolling suitcase)</li>
-                                <li>• <strong>168-Hour Seal:</strong> Heavy-duty airtight TPU inner bladder + waterproof seal zipper stays compressed from takeoff to landing</li>
-                                <li>• <strong>Included Free:</strong> Pocket-sized 1500mAh USB-C Turbo Vacuum Pump (compresses a full load in 15 seconds; doubles as an inflator)</li>
-                                <li>• <strong>Smart Organization:</strong> 180° lay-flat 17.3" padded laptop sleeve, waterproof wet/dirty clothes divider, hidden RFID passport pocket, and suitcase trolley strap</li>
-                            </ul>
-                        </details>
-                        <details class="py-3.5 group">
-                            <summary class="flex justify-between items-center font-bold text-sm text-slate-950 cursor-pointer list-none">
-                                <span>Is the USB-C Vacuum Pump Allowed Through Airport Security (TSA)?</span>
-                                <span class="text-slate-400 group-open:rotate-180 transition">▼</span>
-                            </summary>
-                            <p class="mt-2.5 text-sm text-slate-600 leading-relaxed">
-                                Yes—100%. The pocket-sized micro-pump complies with all FAA and TSA carry-on regulations, and you can also manually press air out through the one-way valve anytime without the pump.
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<input checked="" class="w-4 h-4 accent-emerald-600" id="radio-bogo" name="bundle" type="radio"/>
+<div>
+<div class="font-extrabold text-slate-950 text-base">2x VakuPack bags + 2x USB-C pumps</div>
+<div class="text-xs text-emerald-700 font-semibold">Buy 1 get 1 free ($39.99 each) with fast shipping</div>
+</div>
+</div>
+<div class="text-right">
+<div class="font-extrabold text-xl text-slate-950">$79.99</div>
+<div class="text-xs text-slate-400 line-through">$239.98</div>
+</div>
+</div>
+</label>
+</div>
+<!-- Dual Action Buttons: Add to Cart (Opens Pop-Out Cart) + Express Checkout -->
+<div class="grid sm:grid-cols-12 gap-3">
+<button class="sm:col-span-5 flex items-center justify-center gap-2 bg-slate-950 hover:bg-slate-800 text-white font-extrabold text-base py-4 px-5 rounded-2xl transition cursor-pointer" onclick="addSelectedBundleToCart()">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.2" viewbox="0 0 24 24">
+<path d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+<span>Add to cart</span>
+</button>
+<a class="sm:col-span-7 flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white font-extrabold text-base sm:text-lg py-4 px-6 rounded-2xl shadow-lg shadow-emerald-600/20 transition transform active:scale-[0.99]" href="https://buy.stripe.com/dRm8wP1vn6if8dN8N89sk01" id="main-cta">
+<span>Buy now for $79.99</span>
+<span>→</span>
+</a>
+</div>
+<div class="mt-3.5 bg-emerald-50/80 border border-emerald-200/80 rounded-2xl px-4 py-2.5 flex items-center justify-between text-xs">
+<div class="flex items-center gap-2 font-bold text-slate-900">
+<span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+<span>Order now <span class="text-emerald-700 font-extrabold">Arrives by <span id="est-delivery-range">next week</span></span></span>
+</div>
+<span class="font-extrabold text-emerald-700 uppercase tracking-wider text-[10px]">Free Tracked Shipping</span>
+</div>
+<div class="grid grid-cols-3 gap-2 mt-3 pt-3 border-t border-slate-100 text-center text-xs text-slate-600 font-medium">
+<div>🛡️ 30 Day Money Back</div>
+<div>✈️ TSA Approved Pump</div>
+<div>🔒 256 Bit SSL Checkout</div>
+</div>
+<!-- Expanded Technical & Buyer Objection Accordion -->
+<div class="mt-8 border-t border-slate-200 divide-y divide-slate-200" id="specs">
+<details class="py-3.5 group" open="">
+<summary class="flex justify-between items-center font-bold text-sm text-slate-950 cursor-pointer list-none">
+<span>Specs and What is Inside</span>
+<span class="text-slate-400 group-open:rotate-180 transition">▼</span>
+</summary>
+<ul class="mt-3 text-sm text-slate-600 space-y-1.5 pl-1">
+<li>• <strong>Packed Size:</strong> 18" × 14" × 8" (45 × 35 × 20 cm). Fits under seats on Spirit, Frontier, Ryanair, Delta, and United.</li>
+<li>• <strong>Capacity:</strong> Holds 5 to 7 days of clothes. Packs like a 24 inch suitcase in 45L of space.</li>
+<li>• <strong>7 Day Airtight Seal:</strong> Tough TPU core and waterproof zipper stay sealed from takeoff to landing.</li>
+<li>• <strong>Free In The Box:</strong> Pocket size 1500mAh USB-C pump. Shrinks clothes in 15 seconds and doubles as an inflator.</li>
+<li>• <strong>Smart Layout:</strong> Lay flat 17.3 inch laptop sleeve, waterproof dirty clothes pocket, hidden passport pouch, and luggage strap.</li>
+</ul>
+</details>
+<details class="py-3.5 group">
+<summary class="flex justify-between items-center font-bold text-sm text-slate-950 cursor-pointer list-none">
+<span>Can you take the USB-C pump through airport security?</span>
+<span class="text-slate-400 group-open:rotate-180 transition">▼</span>
+</summary>
+<p class="mt-2.5 text-sm text-slate-600 leading-relaxed">
+                                Yes. It meets all TSA and FAA rules. You can also press air out by hand without the pump.
                             </p>
-                        </details>
-                        <details class="py-3.5 group">
-                            <summary class="flex justify-between items-center font-bold text-sm text-slate-950 cursor-pointer list-none">
-                                <span>Shipping Speed & 30-Day Airline Sizer Guarantee</span>
-                                <span class="text-slate-400 group-open:rotate-180 transition">▼</span>
-                            </summary>
-                            <p class="mt-2.5 text-sm text-slate-600 leading-relaxed">
-                                Every order dispatches within 24 hours with live tracking emailed automatically. If your VakuPack™ ever fails to fit an airline personal-item sizer, snap a quick photo and we’ll refund 100% of your purchase.
+</details>
+<details class="py-3.5 group">
+<summary class="flex justify-between items-center font-bold text-sm text-slate-950 cursor-pointer list-none">
+<span>Fast Shipping and Airline Sizer Guarantee</span>
+<span class="text-slate-400 group-open:rotate-180 transition">▼</span>
+</summary>
+<p class="mt-2.5 text-sm text-slate-600 leading-relaxed">
+                                Orders ship within 24 hours with tracking. If your VakuPack does not fit an airline sizer, send a photo for a full refund.
                             </p>
-                        </details>
+</details>
+</div>
+</div>
+</div>
+<!-- EXTRA PRODUCT INFORMATION SECTION: 4-Pillar Engineering Breakdown -->
+<section class="mt-24">
+<div class="text-center max-w-2xl mx-auto mb-12">
+<div class="inline-block bg-emerald-100 text-emerald-800 text-xs font-extrabold uppercase tracking-wider px-3 py-1 rounded-full mb-3">
+                        Built for Carry On Travel
                     </div>
-                </div>
-            </div>
-
-            <!-- EXTRA PRODUCT INFORMATION SECTION: 4-Pillar Engineering Breakdown -->
-            <section class="mt-24">
-                <div class="text-center max-w-2xl mx-auto mb-12">
-                    <div class="inline-block bg-emerald-100 text-emerald-800 text-xs font-extrabold uppercase tracking-wider px-3 py-1 rounded-full mb-3">
-                        Engineered For Modern Flyers
+<h2 class="text-2xl sm:text-4xl font-extrabold text-slate-950 mb-3">Smart Storage For Every Essential</h2>
+<p class="text-slate-600 text-sm sm:text-base">VakuPack replaces your rolling bag, laptop briefcase, and laundry sack in one waterproof pack.</p>
+</div>
+<div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<div class="p-6 rounded-3xl bg-slate-50 border border-slate-200/80">
+<div class="w-11 h-11 rounded-2xl bg-emerald-600 text-white font-extrabold flex items-center justify-center text-lg mb-4">01</div>
+<h3 class="font-extrabold text-slate-950 text-lg mb-2">Airtight Vacuum Core</h3>
+<p class="text-sm text-slate-600 leading-relaxed">Thick TPU lining and a one way valve keep air out for 7 straight days.</p>
+</div>
+<div class="p-6 rounded-3xl bg-slate-50 border border-slate-200/80">
+<div class="w-11 h-11 rounded-2xl bg-slate-950 text-white font-extrabold flex items-center justify-center text-lg mb-4">02</div>
+<h3 class="font-extrabold text-slate-950 text-lg mb-2">Lay Flat Laptop Compartment</h3>
+<p class="text-sm text-slate-600 leading-relaxed">Padded sleeve fits a 17.3 inch laptop, tablet, and cords. Opens flat for quick security lines.</p>
+</div>
+<div class="p-6 rounded-3xl bg-slate-50 border border-slate-200/80">
+<div class="w-11 h-11 rounded-2xl bg-slate-950 text-white font-extrabold flex items-center justify-center text-lg mb-4">03</div>
+<h3 class="font-extrabold text-slate-950 text-lg mb-2">Sealed Wet and Dirty Pocket</h3>
+<p class="text-sm text-slate-600 leading-relaxed">Waterproof pocket seals away wet swimsuits, gym gear, and dirty clothes from clean items.</p>
+</div>
+<div class="p-6 rounded-3xl bg-slate-50 border border-slate-200/80">
+<div class="w-11 h-11 rounded-2xl bg-slate-950 text-white font-extrabold flex items-center justify-center text-lg mb-4">04</div>
+<h3 class="font-extrabold text-slate-950 text-lg mb-2">Weatherproof 900D Shell</h3>
+<p class="text-sm text-slate-600 leading-relaxed">Tough Oxford shell with waterproof zippers, breathable back padding, and a hidden passport pocket.</p>
+</div>
+</div>
+</section>
+<!-- Action Video & 3-Step Packing Guide -->
+<section class="mt-24 grid lg:grid-cols-12 gap-10 items-center bg-slate-50 rounded-3xl p-6 sm:p-12 border border-slate-200/80" id="how-it-works">
+<div class="lg:col-span-6">
+<div class="w-full max-w-[330px] mx-auto rounded-3xl overflow-hidden shadow-xl border border-slate-200/80 bg-white relative aspect-[9/16]">
+<video autoplay="" class="w-full h-full object-cover" loop="" muted="" playsinline="" poster="images/product_1.png" preload="auto">
+<source src="media/clip_2_action.mp4?v=1795507254" type="video/mp4"/>
+</video>
+</div>
+</div>
+<div class="lg:col-span-6 space-y-6">
+<div class="inline-block bg-emerald-100 text-emerald-800 text-xs font-extrabold uppercase tracking-wider px-3 py-1 rounded-full">
+                        Better Than Packing Cubes
                     </div>
-                    <h2 class="text-2xl sm:text-4xl font-extrabold text-slate-950 mb-3">Every Compartment Built With a Purpose</h2>
-                    <p class="text-slate-600 text-sm sm:text-base">More than a compression bag—VakuPack™ Pro replaces your carry-on suitcase, laptop briefcase, and laundry sack in one weather-sealed pack.</p>
-                </div>
-
-                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                    <div class="p-6 rounded-3xl bg-slate-50 border border-slate-200/80">
-                        <div class="w-11 h-11 rounded-2xl bg-emerald-600 text-white font-extrabold flex items-center justify-center text-lg mb-4">01</div>
-                        <h3 class="font-extrabold text-slate-950 text-lg mb-2">Airtight TPU Core</h3>
-                        <p class="text-sm text-slate-600 leading-relaxed">High-density thermoplastic polyurethane bladder with a one-way check valve locks air out for up to 7 straight days without re-pumping.</p>
-                    </div>
-                    <div class="p-6 rounded-3xl bg-slate-50 border border-slate-200/80">
-                        <div class="w-11 h-11 rounded-2xl bg-slate-950 text-white font-extrabold flex items-center justify-center text-lg mb-4">02</div>
-                        <h3 class="font-extrabold text-slate-950 text-lg mb-2">180° TSA Tech Vault</h3>
-                        <p class="text-sm text-slate-600 leading-relaxed">Dedicated shock-padded rear sleeve fits up to a 17.3" laptop plus tablet and chargers—unzips flat so you breeze through airport security.</p>
-                    </div>
-                    <div class="p-6 rounded-3xl bg-slate-50 border border-slate-200/80">
-                        <div class="w-11 h-11 rounded-2xl bg-slate-950 text-white font-extrabold flex items-center justify-center text-lg mb-4">03</div>
-                        <h3 class="font-extrabold text-slate-950 text-lg mb-2">Odor-Lock Wet Zone</h3>
-                        <p class="text-sm text-slate-600 leading-relaxed">Isolated waterproof lining keeps damp swimwear, gym gear, or worn laundry completely sealed off from your fresh folded outfits.</p>
-                    </div>
-                    <div class="p-6 rounded-3xl bg-slate-50 border border-slate-200/80">
-                        <div class="w-11 h-11 rounded-2xl bg-slate-950 text-white font-extrabold flex items-center justify-center text-lg mb-4">04</div>
-                        <h3 class="font-extrabold text-slate-950 text-lg mb-2">900D Storm Armor</h3>
-                        <p class="text-sm text-slate-600 leading-relaxed">Abrasion-proof ballistic Oxford exterior with waterproof sealed zippers, honeycomb airflow back padding, and hidden anti-theft passport pocket.</p>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Action Video & 3-Step Packing Guide -->
-            <section id="how-it-works" class="mt-24 grid lg:grid-cols-12 gap-10 items-center bg-slate-50 rounded-3xl p-6 sm:p-12 border border-slate-200/80">
-                <div class="lg:col-span-6">
-                    
-    <div class="w-full max-w-[330px] mx-auto rounded-3xl overflow-hidden shadow-xl border border-slate-200/80 bg-white relative aspect-[9/16]">
-        <video autoplay loop muted playsinline preload="auto" poster="images/product_1.png" class="w-full h-full object-cover">
-            <source src="media/clip_2_action.mp4?v=1795507254" type="video/mp4">
-        </video>
-    </div>
-    
-                </div>
-                <div class="lg:col-span-6 space-y-6">
-                    <div class="inline-block bg-emerald-100 text-emerald-800 text-xs font-extrabold uppercase tracking-wider px-3 py-1 rounded-full">
-                        Why It Beats Packing Cubes
-                    </div>
-                    <h2 class="text-2xl sm:text-4xl font-extrabold text-slate-950 leading-tight">
-                        3 Steps From Overstuffed to Under-Seat Ready
+<h2 class="text-2xl sm:text-4xl font-extrabold text-slate-950 leading-tight">
+                        Pack, Compress, and Fly in 3 Steps
                     </h2>
-                    <div class="space-y-4">
-                        <div class="flex gap-4">
-                            <div class="w-8 h-8 rounded-full bg-slate-950 text-white font-extrabold text-sm flex items-center justify-center shrink-0">1</div>
-                            <div>
-                                <h3 class="font-bold text-slate-950">Load Bulky Clothes Into the Airtight Core</h3>
-                                <p class="text-sm text-slate-600">Stack hoodies, jackets, jeans, and tees inside the built-in TPU vacuum liner—no separate plastic bags to lose or tear.</p>
-                            </div>
-                        </div>
-                        <div class="flex gap-4">
-                            <div class="w-8 h-8 rounded-full bg-slate-950 text-white font-extrabold text-sm flex items-center justify-center shrink-0">2</div>
-                            <div>
-                                <h3 class="font-bold text-slate-950">Zip the Waterproof Air-Lock Seal</h3>
-                                <p class="text-sm text-slate-600">Pull the high-tensile airtight zipper shut to lock out ambient air and moisture.</p>
-                            </div>
-                        </div>
-                        <div class="flex gap-4">
-                            <div class="w-8 h-8 rounded-full bg-emerald-600 text-white font-extrabold text-sm flex items-center justify-center shrink-0">3</div>
-                            <div>
-                                <h3 class="font-bold text-slate-950">Tap the USB-C Pump & Watch It Shrink 50%</h3>
-                                <p class="text-sm text-slate-600">Clip the mini pump onto the one-way valve—in 15 seconds, trapped air vanishes and your bag flattens to personal-item size.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="pt-2">
-                        <button onclick="addSelectedBundleToCart()" class="bg-slate-950 hover:bg-emerald-600 text-white font-extrabold text-sm px-6 py-3.5 rounded-xl transition cursor-pointer">
-                            Add VakuPack™ Pro to Cart →
+<div class="space-y-4">
+<div class="flex gap-4">
+<div class="w-8 h-8 rounded-full bg-slate-950 text-white font-extrabold text-sm flex items-center justify-center shrink-0">1</div>
+<div>
+<h3 class="font-bold text-slate-950">1. Pack Your Bulky Clothes</h3>
+<p class="text-sm text-slate-600">Put hoodies, jeans, and jackets right into the built in vacuum pocket. No extra plastic bags needed.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="w-8 h-8 rounded-full bg-slate-950 text-white font-extrabold text-sm flex items-center justify-center shrink-0">2</div>
+<div>
+<h3 class="font-bold text-slate-950">Zip The Airtight Seal</h3>
+<p class="text-sm text-slate-600">Zip it shut to lock out air.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="w-8 h-8 rounded-full bg-emerald-600 text-white font-extrabold text-sm flex items-center justify-center shrink-0">3</div>
+<div>
+<h3 class="font-bold text-slate-950">Tap The Pump And Shrink It 50%</h3>
+<p class="text-sm text-slate-600">Attach the pump. In 15 seconds, it shrinks to personal item size.</p>
+</div>
+</div>
+</div>
+<div class="pt-2">
+<button class="bg-slate-950 hover:bg-emerald-600 text-white font-extrabold text-sm px-6 py-3.5 rounded-xl transition cursor-pointer" onclick="addSelectedBundleToCart()">
+                            Get VakuPack Pro
                         </button>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Airline Sizer Compatibility Bar -->
-            <section class="mt-20 bg-slate-950 text-white rounded-3xl p-8 sm:p-10">
-                <div class="grid md:grid-cols-12 gap-8 items-center">
-                    <div class="md:col-span-5">
-                        <div class="text-xs font-extrabold uppercase tracking-wider text-emerald-400 mb-2">Verified Under-Seat Dimensions</div>
-                        <h3 class="text-2xl sm:text-3xl font-extrabold mb-2">18" × 14" × 8" Approved</h3>
-                        <p class="text-sm text-slate-300 leading-relaxed">Designed specifically to clear strict budget and major airline personal-item metal sizer bins without triggering gate-check fees.</p>
-                    </div>
-                    <div class="md:col-span-7 grid grid-cols-2 sm:grid-cols-3 gap-3 text-xs font-bold">
-                        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-3.5 flex items-center justify-between">
-                            <span>Spirit Airlines</span><span class="text-emerald-400">✓ 18×14×8"</span>
-                        </div>
-                        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-3.5 flex items-center justify-between">
-                            <span>Frontier Airlines</span><span class="text-emerald-400">✓ 18×14×8"</span>
-                        </div>
-                        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-3.5 flex items-center justify-between">
-                            <span>Delta Basic</span><span class="text-emerald-400">✓ Fits Easy</span>
-                        </div>
-                        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-3.5 flex items-center justify-between">
-                            <span>United Basic</span><span class="text-emerald-400">✓ 17×10×9"</span>
-                        </div>
-                        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-3.5 flex items-center justify-between">
-                            <span>American Airlines</span><span class="text-emerald-400">✓ 18×14×8"</span>
-                        </div>
-                        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-3.5 flex items-center justify-between">
-                            <span>Southwest / JetBlue</span><span class="text-emerald-400">✓ Fits Easy</span>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Competitor Comparison Table -->
-            <section id="compare" class="mt-24">
-                <div class="text-center max-w-2xl mx-auto mb-10">
-                    <h2 class="text-2xl sm:text-4xl font-extrabold text-slate-950 mb-3">Same Tech as $220+ Viral Travel Packs—Without the Markup</h2>
-                    <p class="text-slate-600 text-sm sm:text-base">Other brands charge $180+ for the bag alone and make you pay $79 extra for the electric pump.</p>
-                </div>
-                <div class="overflow-x-auto rounded-2xl border border-slate-200 shadow-xs">
-                    <table class="w-full text-left border-collapse text-sm">
-                        <thead>
-                            <tr class="bg-slate-950 text-white">
-                                <th class="p-4 font-bold">Feature</th>
-                                <th class="p-4 font-extrabold text-emerald-400 bg-slate-900">VakuPack™ Pro</th>
-                                <th class="p-4 font-semibold text-slate-300">Big-Name Vacuum Bags</th>
-                                <th class="p-4 font-semibold text-slate-300">Rolling Carry-On</th>
-                            </tr>
-                        </thead>
-                        <tbody class="divide-y divide-slate-200 bg-white">
-                            <tr>
-                                <td class="p-4 font-semibold">Price</td>
-                                <td class="p-4 font-extrabold text-emerald-600 bg-emerald-50/30">$54.99 (or 2 for $79.99)</td>
-                                <td class="p-4 text-slate-600">$179 – $239+</td>
-                                <td class="p-4 text-slate-600">$160 – $300</td>
-                            </tr>
-                            <tr>
-                                <td class="p-4 font-semibold">USB-C Electric Pump</td>
-                                <td class="p-4 font-extrabold text-emerald-600 bg-emerald-50/30">✓ Included FREE</td>
-                                <td class="p-4 text-rose-600 font-semibold">Often $50–$79 Extra</td>
-                                <td class="p-4 text-slate-400">✕ None</td>
-                            </tr>
-                            <tr>
-                                <td class="p-4 font-semibold">Airline Gate Fee</td>
-                                <td class="p-4 font-extrabold text-emerald-600 bg-emerald-50/30">$0 (Under-Seat Personal Item)</td>
-                                <td class="p-4 text-slate-600">$0</td>
-                                <td class="p-4 text-rose-600 font-semibold">$65 – $99 per flight</td>
-                            </tr>
-                            <tr>
-                                <td class="p-4 font-semibold">Waterproof Wet/Dry & RFID Lock</td>
-                                <td class="p-4 font-extrabold text-emerald-600 bg-emerald-50/30">✓ Both Built In</td>
-                                <td class="p-4 text-slate-600">Partial</td>
-                                <td class="p-4 text-slate-400">✕ No wet pocket</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </section>
-
-            <!-- Interactive Compact Scrollable Reviews Panel (4★ & 5★ + Picture Lightbox + Expand Arrow) -->
-            <section id="reviews" class="mt-24">
-                <div class="max-w-4xl mx-auto">
-                    <div class="bg-slate-50 rounded-3xl p-6 sm:p-8 border border-slate-200/90 shadow-xs">
-                        <div class="grid md:grid-cols-12 gap-6 items-center pb-6 border-b border-slate-200">
-                            <div class="md:col-span-4 text-center md:text-left md:border-r md:border-slate-200 md:pr-6">
-                                <div class="text-xs font-extrabold uppercase tracking-wider text-emerald-600 mb-1">Verified Flyer Rating</div>
-                                <div class="flex items-baseline justify-center md:justify-start gap-2">
-                                    <span class="text-5xl font-extrabold text-slate-950">4.9</span>
-                                    <span class="text-sm font-semibold text-slate-500">/ 5.0</span>
-                                </div>
-                                <div class="text-amber-400 text-lg tracking-wider my-1">★★★★★</div>
-                                <div class="text-xs font-semibold text-slate-600">Based on <span class="font-extrabold text-slate-950">4,280</span> reviews</div>
-                            </div>
-
-                            <div class="md:col-span-8 space-y-2 text-xs">
-                                <button onclick="filterReviews('5')" class="w-full flex items-center gap-3 group hover:opacity-90">
-                                    <span class="w-10 font-bold text-slate-800 text-left group-hover:text-emerald-600">5 ★</span>
-                                    <div class="flex-1 h-2.5 bg-slate-200 rounded-full overflow-hidden">
-                                        <div class="h-full bg-emerald-500 rounded-full" style="width: 91%"></div>
-                                    </div>
-                                    <span class="w-12 text-right font-bold text-slate-700">3,895</span>
-                                </button>
-                                <button onclick="filterReviews('4')" class="w-full flex items-center gap-3 group hover:opacity-90">
-                                    <span class="w-10 font-bold text-slate-800 text-left group-hover:text-emerald-600">4 ★</span>
-                                    <div class="flex-1 h-2.5 bg-slate-200 rounded-full overflow-hidden">
-                                        <div class="h-full bg-emerald-400 rounded-full" style="width: 9%"></div>
-                                    </div>
-                                    <span class="w-12 text-right font-bold text-slate-700">385</span>
-                                </button>
-                                <div class="w-full flex items-center gap-3 opacity-45">
-                                    <span class="w-10 font-semibold text-slate-500 text-left">3 ★</span>
-                                    <div class="flex-1 h-2 bg-slate-200 rounded-full"></div>
-                                    <span class="w-12 text-right text-slate-500">0</span>
-                                </div>
-                                <div class="w-full flex items-center gap-3 opacity-45">
-                                    <span class="w-10 font-semibold text-slate-500 text-left">2 ★</span>
-                                    <div class="flex-1 h-2 bg-slate-200 rounded-full"></div>
-                                    <span class="w-12 text-right text-slate-500">0</span>
-                                </div>
-                                <div class="w-full flex items-center gap-3 opacity-45">
-                                    <span class="w-10 font-semibold text-slate-500 text-left">1 ★</span>
-                                    <div class="flex-1 h-2 bg-slate-200 rounded-full"></div>
-                                    <span class="w-12 text-right text-slate-500">0</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="flex flex-wrap items-center justify-between gap-2 pt-4 pb-3">
-                            <div class="flex flex-wrap gap-2" id="rev-filter-bar">
-                                <button onclick="filterReviews('all')" data-filter="all" class="rev-filter-btn bg-slate-950 text-white text-xs font-bold px-3.5 py-1.5 rounded-full transition">
+</div>
+</div>
+</section>
+<!-- Airline Sizer Compatibility Bar -->
+<section class="mt-20 bg-slate-950 text-white rounded-3xl p-8 sm:p-10">
+<div class="grid md:grid-cols-12 gap-8 items-center">
+<div class="md:col-span-5">
+<div class="text-xs font-extrabold uppercase tracking-wider text-emerald-400 mb-2">Fits Under Any Airline Seat</div>
+<h3 class="text-2xl sm:text-3xl font-extrabold mb-2">18" × 14" × 8" Approved</h3>
+<p class="text-sm text-slate-300 leading-relaxed">Fits airline sizer bins so you skip gate check fees.</p>
+</div>
+<div class="md:col-span-7 grid grid-cols-2 sm:grid-cols-3 gap-3 text-xs font-bold">
+<div class="bg-slate-900 border border-slate-800 rounded-2xl p-3.5 flex items-center justify-between">
+<span>Spirit Airlines</span><span class="text-emerald-400">✓ 18×14×8"</span>
+</div>
+<div class="bg-slate-900 border border-slate-800 rounded-2xl p-3.5 flex items-center justify-between">
+<span>Frontier Airlines</span><span class="text-emerald-400">✓ 18×14×8"</span>
+</div>
+<div class="bg-slate-900 border border-slate-800 rounded-2xl p-3.5 flex items-center justify-between">
+<span>Delta Basic</span><span class="text-emerald-400">✓ Fits Easy</span>
+</div>
+<div class="bg-slate-900 border border-slate-800 rounded-2xl p-3.5 flex items-center justify-between">
+<span>United Basic</span><span class="text-emerald-400">✓ 17×10×9"</span>
+</div>
+<div class="bg-slate-900 border border-slate-800 rounded-2xl p-3.5 flex items-center justify-between">
+<span>American Airlines</span><span class="text-emerald-400">✓ 18×14×8"</span>
+</div>
+<div class="bg-slate-900 border border-slate-800 rounded-2xl p-3.5 flex items-center justify-between">
+<span>Southwest / JetBlue</span><span class="text-emerald-400">✓ Fits Easy</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Competitor Comparison Table -->
+<section class="mt-24" id="compare">
+<div class="text-center max-w-2xl mx-auto mb-10">
+<h2 class="text-2xl sm:text-4xl font-extrabold text-slate-950 mb-3">Same $220 Tech Without The Markup</h2>
+<p class="text-slate-600 text-sm sm:text-base">Other brands charge $180 plus $79 extra for the pump.</p>
+</div>
+<div class="overflow-x-auto rounded-2xl border border-slate-200 shadow-xs">
+<table class="w-full text-left border-collapse text-sm">
+<thead>
+<tr class="bg-slate-950 text-white">
+<th class="p-4 font-bold">Feature</th>
+<th class="p-4 font-extrabold text-emerald-400 bg-slate-900">VakuPack Pro</th>
+<th class="p-4 font-semibold text-slate-300">Name Brand Vacuum Bags</th>
+<th class="p-4 font-semibold text-slate-300">Rolling Carry On</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-slate-200 bg-white">
+<tr>
+<td class="p-4 font-semibold">Price</td>
+<td class="p-4 font-extrabold text-emerald-600 bg-emerald-50/30">$54.99 (or 2 for $79.99)</td>
+<td class="p-4 text-slate-600">$179 – $239+</td>
+<td class="p-4 text-slate-600">$160 – $300</td>
+</tr>
+<tr>
+<td class="p-4 font-semibold">USB-C Electric Pump</td>
+<td class="p-4 font-extrabold text-emerald-600 bg-emerald-50/30">✓ Included Free</td>
+<td class="p-4 text-rose-600 font-semibold">$50 to $79 Extra</td>
+<td class="p-4 text-slate-400">✕ None</td>
+</tr>
+<tr>
+<td class="p-4 font-semibold">Airline Gate Fee</td>
+<td class="p-4 font-extrabold text-emerald-600 bg-emerald-50/30">$0 Personal Item</td>
+<td class="p-4 text-slate-600">$0</td>
+<td class="p-4 text-rose-600 font-semibold">$65 to $99 per flight</td>
+</tr>
+<tr>
+<td class="p-4 font-semibold">Wet Pocket &amp; RFID Protection</td>
+<td class="p-4 font-extrabold text-emerald-600 bg-emerald-50/30">✓ Both Built In</td>
+<td class="p-4 text-slate-600">Partial</td>
+<td class="p-4 text-slate-400">✕ No wet pocket</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<!-- Interactive Compact Scrollable Reviews Panel (4★ & 5★ + Picture Lightbox + Expand Arrow) -->
+<section class="mt-24" id="reviews">
+<div class="max-w-4xl mx-auto">
+<div class="bg-slate-50 rounded-3xl p-6 sm:p-8 border border-slate-200/90 shadow-xs">
+<div class="grid md:grid-cols-12 gap-6 items-center pb-6 border-b border-slate-200">
+<div class="md:col-span-4 text-center md:text-left md:border-r md:border-slate-200 md:pr-6">
+<div class="text-xs font-extrabold uppercase tracking-wider text-emerald-600 mb-1">Verified Flyer Rating</div>
+<div class="flex items-baseline justify-center md:justify-start gap-2">
+<span class="text-5xl font-extrabold text-slate-950">4.9</span>
+<span class="text-sm font-semibold text-slate-500">/ 5.0</span>
+</div>
+<div class="text-amber-400 text-lg tracking-wider my-1">★★★★★</div>
+<div class="text-xs font-semibold text-slate-600">Based on <span class="font-extrabold text-slate-950">4,280</span> reviews</div>
+</div>
+<div class="md:col-span-8 space-y-2 text-xs">
+<button class="w-full flex items-center gap-3 group hover:opacity-90" onclick="filterReviews('5')">
+<span class="w-10 font-bold text-slate-800 text-left group-hover:text-emerald-600">5 ★</span>
+<div class="flex-1 h-2.5 bg-slate-200 rounded-full overflow-hidden">
+<div class="h-full bg-emerald-500 rounded-full" style="width: 91%"></div>
+</div>
+<span class="w-12 text-right font-bold text-slate-700">3,895</span>
+</button>
+<button class="w-full flex items-center gap-3 group hover:opacity-90" onclick="filterReviews('4')">
+<span class="w-10 font-bold text-slate-800 text-left group-hover:text-emerald-600">4 ★</span>
+<div class="flex-1 h-2.5 bg-slate-200 rounded-full overflow-hidden">
+<div class="h-full bg-emerald-400 rounded-full" style="width: 9%"></div>
+</div>
+<span class="w-12 text-right font-bold text-slate-700">385</span>
+</button>
+<div class="w-full flex items-center gap-3 opacity-45">
+<span class="w-10 font-semibold text-slate-500 text-left">3 ★</span>
+<div class="flex-1 h-2 bg-slate-200 rounded-full"></div>
+<span class="w-12 text-right text-slate-500">0</span>
+</div>
+<div class="w-full flex items-center gap-3 opacity-45">
+<span class="w-10 font-semibold text-slate-500 text-left">2 ★</span>
+<div class="flex-1 h-2 bg-slate-200 rounded-full"></div>
+<span class="w-12 text-right text-slate-500">0</span>
+</div>
+<div class="w-full flex items-center gap-3 opacity-45">
+<span class="w-10 font-semibold text-slate-500 text-left">1 ★</span>
+<div class="flex-1 h-2 bg-slate-200 rounded-full"></div>
+<span class="w-12 text-right text-slate-500">0</span>
+</div>
+</div>
+</div>
+<div class="flex flex-wrap items-center justify-between gap-2 pt-4 pb-3">
+<div class="flex flex-wrap gap-2" id="rev-filter-bar">
+<button class="rev-filter-btn bg-slate-950 text-white text-xs font-bold px-3.5 py-1.5 rounded-full transition" data-filter="all" onclick="filterReviews('all')">
                                     All Reviews (4,280)
                                 </button>
-                                <button onclick="filterReviews('photos')" data-filter="photos" class="rev-filter-btn bg-white text-slate-700 border border-slate-200 hover:border-slate-400 text-xs font-bold px-3.5 py-1.5 rounded-full transition">
+<button class="rev-filter-btn bg-white text-slate-700 border border-slate-200 hover:border-slate-400 text-xs font-bold px-3.5 py-1.5 rounded-full transition" data-filter="photos" onclick="filterReviews('photos')">
                                     With Photos
                                 </button>
-                                <button onclick="filterReviews('5')" data-filter="5" class="rev-filter-btn bg-white text-slate-700 border border-slate-200 hover:border-slate-400 text-xs font-bold px-3.5 py-1.5 rounded-full transition">
+<button class="rev-filter-btn bg-white text-slate-700 border border-slate-200 hover:border-slate-400 text-xs font-bold px-3.5 py-1.5 rounded-full transition" data-filter="5" onclick="filterReviews('5')">
                                     5 ★ (3,895)
                                 </button>
-                                <button onclick="filterReviews('4')" data-filter="4" class="rev-filter-btn bg-white text-slate-700 border border-slate-200 hover:border-slate-400 text-xs font-bold px-3.5 py-1.5 rounded-full transition">
+<button class="rev-filter-btn bg-white text-slate-700 border border-slate-200 hover:border-slate-400 text-xs font-bold px-3.5 py-1.5 rounded-full transition" data-filter="4" onclick="filterReviews('4')">
                                     4 ★ (385)
                                 </button>
-                            </div>
-                            <span class="text-[11px] font-semibold text-slate-500">Showing 4★ & 5★ verified reviews</span>
-                        </div>
-
-                        <div class="relative mt-2">
-                            <div id="reviews-scroll-box" class="max-h-[390px] overflow-y-auto pr-1.5 space-y-3 transition-all duration-300"></div>
-                            <div id="reviews-fade" class="pointer-events-none absolute bottom-0 inset-x-0 h-12 bg-gradient-to-t from-slate-50 to-transparent rounded-b-2xl"></div>
-                        </div>
-
-                        <div class="flex justify-center mt-3">
-                            <button id="reviews-expand-btn" onclick="toggleReviewsExpand()" aria-label="Expand reviews" class="group flex items-center justify-center w-10 h-10 rounded-full bg-white border border-slate-300 shadow-sm hover:border-emerald-500 hover:bg-emerald-50 transition">
-                                <svg id="reviews-arrow-icon" class="w-5 h-5 text-slate-700 group-hover:text-emerald-600 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-                                </svg>
-                            </button>
-                        </div>
-                    </div>
+</div>
+<span class="text-[11px] font-semibold text-slate-500">Showing 4★ and 5★ verified reviews</span>
+</div>
+<div class="relative mt-2">
+<div class="max-h-[390px] overflow-y-auto pr-1.5 space-y-3 transition-all duration-300" id="reviews-scroll-box"></div>
+<div class="pointer-events-none absolute bottom-0 inset-x-0 h-12 bg-gradient-to-t from-slate-50 to-transparent rounded-b-2xl" id="reviews-fade"></div>
+</div>
+<div class="flex justify-center mt-3">
+<button aria-label="Expand reviews" class="group flex items-center justify-center w-10 h-10 rounded-full bg-white border border-slate-300 shadow-sm hover:border-emerald-500 hover:bg-emerald-50 transition" id="reviews-expand-btn" onclick="toggleReviewsExpand()">
+<svg class="w-5 h-5 text-slate-700 group-hover:text-emerald-600 transition-transform duration-300" fill="none" id="reviews-arrow-icon" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24">
+<path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</button>
+</div>
+</div>
+</div>
+</section>
+</main>
+</div>
+<!-- ========================================================= -->
+<!-- PAGE 2: ABOUT US                                          -->
+<!-- ========================================================= -->
+<div class="page-view hidden" id="page-about">
+<main class="max-w-5xl mx-auto px-5 pt-12 pb-24">
+<div class="text-center max-w-3xl mx-auto mb-14">
+<div class="inline-block bg-emerald-100 text-emerald-800 text-xs font-extrabold uppercase tracking-wider px-3.5 py-1 rounded-full mb-4">
+                    Our Mission
                 </div>
-            </section>
-        </main>
-    </div>
-
-    <!-- ========================================================= -->
-    <!-- PAGE 2: ABOUT US                                          -->
-    <!-- ========================================================= -->
-    <div id="page-about" class="page-view hidden">
-        <main class="max-w-5xl mx-auto px-5 pt-12 pb-24">
-            <div class="text-center max-w-3xl mx-auto mb-14">
-                <div class="inline-block bg-emerald-100 text-emerald-800 text-xs font-extrabold uppercase tracking-wider px-3.5 py-1 rounded-full mb-4">
-                    Our Story & Mission
-                </div>
-                <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-slate-950 leading-tight mb-5">
-                    Built to End the <span class="text-emerald-600">$75 Airline Gate-Check Tax.</span>
-                </h1>
-                <p class="text-slate-600 text-base sm:text-lg leading-relaxed">
-                    VakuPack™ was created by frequent flyers who were tired of choosing between paying $80+ in carry-on fees or stuffing 4 days of clothes into an undersized school backpack.
+<h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-slate-950 leading-tight mb-5">
+                    Built to Stop the <span class="text-emerald-600">$75 Gate Check Fee.</span>
+</h1>
+<p class="text-slate-600 text-base sm:text-lg leading-relaxed">
+                    We built VakuPack so flyers never pay $80 carry on fees or cram clothes into tiny backpacks.
                 </p>
-            </div>
-
-            <!-- Impact Stats Bar -->
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16">
-                <div class="bg-slate-950 text-white rounded-3xl p-6 text-center">
-                    <div class="text-3xl sm:text-4xl font-extrabold text-emerald-400">4,280+</div>
-                    <div class="text-xs font-semibold text-slate-300 mt-1">Travelers Equipped</div>
-                </div>
-                <div class="bg-slate-50 border border-slate-200 rounded-3xl p-6 text-center">
-                    <div class="text-3xl sm:text-4xl font-extrabold text-slate-950">$340K+</div>
-                    <div class="text-xs font-semibold text-slate-600 mt-1">Estimated Gate Fees Saved</div>
-                </div>
-                <div class="bg-slate-50 border border-slate-200 rounded-3xl p-6 text-center">
-                    <div class="text-3xl sm:text-4xl font-extrabold text-slate-950">50%+</div>
-                    <div class="text-xs font-semibold text-slate-600 mt-1">Volume Compression</div>
-                </div>
-                <div class="bg-slate-50 border border-slate-200 rounded-3xl p-6 text-center">
-                    <div class="text-3xl sm:text-4xl font-extrabold text-slate-950">30-Day</div>
-                    <div class="text-xs font-semibold text-slate-600 mt-1">Sizer Fit Guarantee</div>
-                </div>
-            </div>
-
-            <!-- Two-Column Brand Story + Studio Visual -->
-            <div class="grid md:grid-cols-12 gap-10 items-center bg-slate-50 rounded-3xl p-6 sm:p-10 border border-slate-200/80 mb-16">
-                <div class="md:col-span-5 flex justify-center">
-                    <div class="studio-pedestal rounded-2xl p-6 border border-slate-200 w-full flex items-center justify-center">
-                        <img src="images/product_1.png" alt="VakuPack Pro" class="max-h-72 object-contain drop-shadow-xl" />
-                    </div>
-                </div>
-                <div class="md:col-span-7 space-y-4">
-                    <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-950">Why Pay $220+ for a Logo?</h2>
-                    <p class="text-sm sm:text-base text-slate-600 leading-relaxed">
-                        Legacy luggage brands sell vacuum-seal backpacks for $180 to $260—and then charge another $60+ just for the electric air pump. By shipping direct from our manufacturing partners straight to your doorstep without middleman retail markups, VakuPack™ delivers the exact same <strong>900D water-repellent shell, airtight TPU liner, and rechargeable USB-C pump</strong> for a fraction of the price.
+</div>
+<!-- Impact Stats Bar -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16">
+<div class="bg-slate-950 text-white rounded-3xl p-6 text-center">
+<div class="text-3xl sm:text-4xl font-extrabold text-emerald-400">4,280+</div>
+<div class="text-xs font-semibold text-slate-300 mt-1">Flyers Equipped</div>
+</div>
+<div class="bg-slate-50 border border-slate-200 rounded-3xl p-6 text-center">
+<div class="text-3xl sm:text-4xl font-extrabold text-slate-950">$340K+</div>
+<div class="text-xs font-semibold text-slate-600 mt-1">Gate Fees Saved</div>
+</div>
+<div class="bg-slate-50 border border-slate-200 rounded-3xl p-6 text-center">
+<div class="text-3xl sm:text-4xl font-extrabold text-slate-950">50%+</div>
+<div class="text-xs font-semibold text-slate-600 mt-1">Space Saved</div>
+</div>
+<div class="bg-slate-50 border border-slate-200 rounded-3xl p-6 text-center">
+<div class="text-3xl sm:text-4xl font-extrabold text-slate-950">30-Day</div>
+<div class="text-xs font-semibold text-slate-600 mt-1">Sizer Fit Guarantee</div>
+</div>
+</div>
+<!-- Two-Column Brand Story + Studio Visual -->
+<div class="grid md:grid-cols-12 gap-10 items-center bg-slate-50 rounded-3xl p-6 sm:p-10 border border-slate-200/80 mb-16">
+<div class="md:col-span-5 flex justify-center">
+<div class="studio-pedestal rounded-2xl p-6 border border-slate-200 w-full flex items-center justify-center">
+<img alt="VakuPack Pro" class="max-h-72 object-contain drop-shadow-xl" src="images/product_1.png"/>
+</div>
+</div>
+<div class="md:col-span-7 space-y-4">
+<h2 class="text-2xl sm:text-3xl font-extrabold text-slate-950">Why Pay $220+ for a Logo?</h2>
+<p class="text-sm sm:text-base text-slate-600 leading-relaxed">
+                        Big luggage brands charge up to $260 for vacuum bags plus $60 for pumps. Shipping direct cuts retail markups, giving you the same <strong>900D waterproof shell, airtight TPU liner, and USB-C pump</strong> at half the price.
                     </p>
-                    <p class="text-sm sm:text-base text-slate-600 leading-relaxed">
-                        Every batch is pressure-tested for a 168-hour airtight hold and measured against strict 18" × 14" × 8" personal-item sizer standards before leaving our warehouse.
+<p class="text-sm sm:text-base text-slate-600 leading-relaxed">
+                        Tested to hold pressure for 168 hours and fit airline 18" × 14" × 8" personal item sizers.
                     </p>
-                    <div class="pt-3 flex flex-wrap gap-3">
-                        <button onclick="jumpToSection('offer-box')" class="bg-emerald-600 hover:bg-emerald-500 text-white font-extrabold text-sm px-6 py-3.5 rounded-xl shadow-md transition cursor-pointer">
-                            Shop VakuPack™ Pro →
+<div class="pt-3 flex flex-wrap gap-3">
+<button class="bg-emerald-600 hover:bg-emerald-500 text-white font-extrabold text-sm px-6 py-3.5 rounded-xl shadow-md transition cursor-pointer" onclick="jumpToSection('offer-box')">
+                            Shop VakuPack Pro
                         </button>
-                        <button onclick="switchPage('contact')" class="bg-white hover:bg-slate-100 text-slate-950 border border-slate-300 font-bold text-sm px-6 py-3.5 rounded-xl transition cursor-pointer">
-                            Contact Our Team
+<button class="bg-white hover:bg-slate-100 text-slate-950 border border-slate-300 font-bold text-sm px-6 py-3.5 rounded-xl transition cursor-pointer" onclick="switchPage('contact')">
+                            Contact Support
                         </button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 3 Core Commitments -->
-            <div class="grid md:grid-cols-3 gap-6">
-                <div class="p-6 rounded-3xl border border-slate-200 bg-white">
-                    <div class="text-2xl mb-3">🧪</div>
-                    <h3 class="font-extrabold text-slate-950 text-lg mb-2">168-Hour Valve Tested</h3>
-                    <p class="text-sm text-slate-600 leading-relaxed">Every one-way vacuum valve and waterproof zipper is inspected to ensure zero air leak-back during long-haul flights.</p>
-                </div>
-                <div class="p-6 rounded-3xl border border-slate-200 bg-white">
-                    <div class="text-2xl mb-3">⚡</div>
-                    <h3 class="font-extrabold text-slate-950 text-lg mb-2">Fast 24-Hour Dispatch</h3>
-                    <p class="text-sm text-slate-600 leading-relaxed">Orders are processed within 24 hours with end-to-end tracking numbers sent directly to your inbox.</p>
-                </div>
-                <div class="p-6 rounded-3xl border border-slate-200 bg-white">
-                    <div class="text-2xl mb-3">🛡️</div>
-                    <h3 class="font-extrabold text-slate-950 text-lg mb-2">Zero-Risk Gate Guarantee</h3>
-                    <p class="text-sm text-slate-600 leading-relaxed">Try VakuPack™ on your next trip. If you aren't thrilled with the space savings, send it back within 30 days for a full refund.</p>
-                </div>
-            </div>
-        </main>
-    </div>
-
-    <!-- ========================================================= -->
-    <!-- PAGE 3: CONTACT US                                        -->
-    <!-- ========================================================= -->
-    <div id="page-contact" class="page-view hidden">
-        <main class="max-w-5xl mx-auto px-5 pt-12 pb-24">
-            <div class="text-center max-w-2xl mx-auto mb-12">
-                <div class="inline-block bg-emerald-100 text-emerald-800 text-xs font-extrabold uppercase tracking-wider px-3.5 py-1 rounded-full mb-4">
+</div>
+</div>
+</div>
+<!-- 3 Core Commitments -->
+<div class="grid md:grid-cols-3 gap-6">
+<div class="p-6 rounded-3xl border border-slate-200 bg-white">
+<div class="text-2xl mb-3">🧪</div>
+<h3 class="font-extrabold text-slate-950 text-lg mb-2">168 Hour Leak Test</h3>
+<p class="text-sm text-slate-600 leading-relaxed">Every valve and zipper is inspected to stop air leaks during long flights.</p>
+</div>
+<div class="p-6 rounded-3xl border border-slate-200 bg-white">
+<div class="text-2xl mb-3">⚡</div>
+<h3 class="font-extrabold text-slate-950 text-lg mb-2">Fast 24 Hour Shipping</h3>
+<p class="text-sm text-slate-600 leading-relaxed">Orders ship within 24 hours with full tracking sent straight to your inbox.</p>
+</div>
+<div class="p-6 rounded-3xl border border-slate-200 bg-white">
+<div class="text-2xl mb-3">🛡️</div>
+<h3 class="font-extrabold text-slate-950 text-lg mb-2">Zero Risk Fit Guarantee</h3>
+<p class="text-sm text-slate-600 leading-relaxed">Pack it on your next trip. Return within 30 days for a full refund if not satisfied.</p>
+</div>
+</div>
+</main>
+</div>
+<!-- ========================================================= -->
+<!-- PAGE 3: CONTACT US                                        -->
+<!-- ========================================================= -->
+<div class="page-view hidden" id="page-contact">
+<main class="max-w-5xl mx-auto px-5 pt-12 pb-24">
+<div class="text-center max-w-2xl mx-auto mb-12">
+<div class="inline-block bg-emerald-100 text-emerald-800 text-xs font-extrabold uppercase tracking-wider px-3.5 py-1 rounded-full mb-4">
                     24/7 Flyer Support
                 </div>
-                <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-slate-950 mb-4">
+<h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-slate-950 mb-4">
                     How Can We Help?
                 </h1>
-                <p class="text-slate-600 text-base">
-                    Questions about airline dimensions, your BOGO bundle, or tracking your shipment? Our support team replies in under 4 hours.
+<p class="text-slate-600 text-base">
+                    Have questions about sizing, bundles, or delivery? Our team replies in under 4 hours.
                 </p>
-            </div>
-
-            <div class="grid lg:grid-cols-12 gap-8 items-start">
-                <!-- Left Info & Order Tracker Helper -->
-                <div class="lg:col-span-5 space-y-5">
-                    <div class="p-6 rounded-3xl bg-slate-50 border border-slate-200/80 space-y-4">
-                        <div class="flex items-start gap-3.5">
-                            <div class="w-10 h-10 rounded-2xl bg-emerald-600 text-white flex items-center justify-center font-bold shrink-0">✉️</div>
-                            <div>
-                                <div class="font-extrabold text-slate-950 text-sm">Email Support</div>
-                                <div class="text-xs text-slate-500 mt-0.5">Average reply time: &lt; 4 hours</div>
-                                <a href="mailto:support@vakupack.com" class="inline-block text-sm font-bold text-emerald-600 hover:underline mt-1">support@vakupack.com</a>
-                            </div>
-                        </div>
-                        <div class="border-t border-slate-200 pt-4 flex items-start gap-3.5">
-                            <div class="w-10 h-10 rounded-2xl bg-slate-950 text-white flex items-center justify-center font-bold shrink-0">📦</div>
-                            <div>
-                                <div class="font-extrabold text-slate-950 text-sm">Order Processing & Shipping</div>
-                                <p class="text-xs text-slate-600 mt-1 leading-relaxed">Orders ship within 24 hours. Tracking links are emailed automatically as soon as your label is scanned.</p>
-                            </div>
-                        </div>
-                        <div class="border-t border-slate-200 pt-4 flex items-start gap-3.5">
-                            <div class="w-10 h-10 rounded-2xl bg-slate-950 text-white flex items-center justify-center font-bold shrink-0">🔄</div>
-                            <div>
-                                <div class="font-extrabold text-slate-950 text-sm">30-Day Hassle-Free Returns</div>
-                                <p class="text-xs text-slate-600 mt-1 leading-relaxed">Need an exchange or refund? Send us your order number and we’ll generate a return label right away.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Quick Order Status Lookup Box -->
-                    <div class="p-6 rounded-3xl bg-slate-950 text-white">
-                        <div class="text-xs font-extrabold uppercase tracking-wider text-emerald-400 mb-1.5">Instant Order Lookup</div>
-                        <p class="text-xs text-slate-300 mb-3">Enter your order # or checkout email to check dispatch status:</p>
-                        <div class="flex gap-2">
-                            <input id="track-input" type="text" placeholder="e.g. #VP-1048 or email" class="flex-1 bg-slate-900 border border-slate-700 rounded-xl px-3.5 py-2.5 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-emerald-500" />
-                            <button onclick="checkOrderLookup()" class="bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-extrabold text-xs px-4 py-2.5 rounded-xl transition cursor-pointer">
+</div>
+<div class="grid lg:grid-cols-12 gap-8 items-start">
+<!-- Left Info & Order Tracker Helper -->
+<div class="lg:col-span-5 space-y-5">
+<div class="p-6 rounded-3xl bg-slate-50 border border-slate-200/80 space-y-4">
+<div class="flex items-start gap-3.5">
+<div class="w-10 h-10 rounded-2xl bg-emerald-600 text-white flex items-center justify-center font-bold shrink-0">✉️</div>
+<div>
+<div class="font-extrabold text-slate-950 text-sm">Email Support</div>
+<div class="text-xs text-slate-500 mt-0.5">Replies in under 4 hours</div>
+<a class="inline-block text-sm font-bold text-emerald-600 hover:underline mt-1" href="mailto:support@vakupack.com">support@vakupack.com</a>
+</div>
+</div>
+<div class="border-t border-slate-200 pt-4 flex items-start gap-3.5">
+<div class="w-10 h-10 rounded-2xl bg-slate-950 text-white flex items-center justify-center font-bold shrink-0">📦</div>
+<div>
+<div class="font-extrabold text-slate-950 text-sm">Order Processing and Shipping</div>
+<p class="text-xs text-slate-600 mt-1 leading-relaxed">Orders ship within 24 hours with tracking sent straight to your inbox.</p>
+</div>
+</div>
+<div class="border-t border-slate-200 pt-4 flex items-start gap-3.5">
+<div class="w-10 h-10 rounded-2xl bg-slate-950 text-white flex items-center justify-center font-bold shrink-0">🔄</div>
+<div>
+<div class="font-extrabold text-slate-950 text-sm">30 Day Easy Returns</div>
+<p class="text-xs text-slate-600 mt-1 leading-relaxed">Need an exchange or refund? Send your order number and get your return label fast.</p>
+</div>
+</div>
+</div>
+<!-- Quick Order Status Lookup Box -->
+<div class="p-6 rounded-3xl bg-slate-950 text-white">
+<div class="text-xs font-extrabold uppercase tracking-wider text-emerald-400 mb-1.5">Track Your Order</div>
+<p class="text-xs text-slate-300 mb-3">Enter your order number or email to check shipping status:</p>
+<div class="flex gap-2">
+<input class="flex-1 bg-slate-900 border border-slate-700 rounded-xl px-3.5 py-2.5 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-emerald-500" id="track-input" placeholder="e.g. #VP-1048 or email" type="text"/>
+<button class="bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-extrabold text-xs px-4 py-2.5 rounded-xl transition cursor-pointer" onclick="checkOrderLookup()">
                                 Track
                             </button>
-                        </div>
-                        <p id="track-result" class="hidden text-xs text-emerald-300 mt-3 bg-slate-900/90 p-3 rounded-xl border border-slate-800"></p>
-                    </div>
-                </div>
-
-                <!-- Right Interactive Contact Form -->
-                <div class="lg:col-span-7 bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-sm">
-                    <form id="contact-form" onsubmit="submitContactForm(event)" class="space-y-4">
-                        <div class="grid sm:grid-cols-2 gap-4">
-                            <div>
-                                <label class="block text-xs font-extrabold text-slate-700 uppercase tracking-wider mb-1.5">Full Name *</label>
-                                <input required type="text" id="cf-name" placeholder="Alex Rivera" class="w-full rounded-xl border border-slate-300 px-4 py-3 text-sm focus:outline-none focus:border-emerald-500" />
-                            </div>
-                            <div>
-                                <label class="block text-xs font-extrabold text-slate-700 uppercase tracking-wider mb-1.5">Email Address *</label>
-                                <input required type="email" id="cf-email" placeholder="alex@example.com" class="w-full rounded-xl border border-slate-300 px-4 py-3 text-sm focus:outline-none focus:border-emerald-500" />
-                            </div>
-                        </div>
-
-                        <div class="grid sm:grid-cols-2 gap-4">
-                            <div>
-                                <label class="block text-xs font-extrabold text-slate-700 uppercase tracking-wider mb-1.5">Topic</label>
-                                <select id="cf-topic" class="w-full rounded-xl border border-slate-300 px-4 py-3 text-sm bg-white focus:outline-none focus:border-emerald-500">
-                                    <option>Airline Size & Product Question</option>
-                                    <option>Order Status & Tracking</option>
-                                    <option>BOGO 2-Pack Bundle Question</option>
-                                    <option>Returns & 30-Day Guarantee</option>
-                                </select>
-                            </div>
-                            <div>
-                                <label class="block text-xs font-extrabold text-slate-700 uppercase tracking-wider mb-1.5">Order Number (Optional)</label>
-                                <input type="text" id="cf-order" placeholder="#VP-XXXX" class="w-full rounded-xl border border-slate-300 px-4 py-3 text-sm focus:outline-none focus:border-emerald-500" />
-                            </div>
-                        </div>
-
-                        <div>
-                            <label class="block text-xs font-extrabold text-slate-700 uppercase tracking-wider mb-1.5">How Can We Help? *</label>
-                            <textarea required rows="4" id="cf-msg" placeholder="Tell us your question or airline details and we'll get right back to you..." class="w-full rounded-xl border border-slate-300 px-4 py-3 text-sm focus:outline-none focus:border-emerald-500"></textarea>
-                        </div>
-
-                        <button type="submit" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-extrabold text-base py-4 rounded-2xl shadow-lg shadow-emerald-600/20 transition cursor-pointer">
-                            Send Message →
+</div>
+<p class="hidden text-xs text-emerald-300 mt-3 bg-slate-900/90 p-3 rounded-xl border border-slate-800" id="track-result"></p>
+</div>
+</div>
+<!-- Right Interactive Contact Form -->
+<div class="lg:col-span-7 bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-sm">
+<form class="space-y-4" id="contact-form" onsubmit="submitContactForm(event)">
+<div class="grid sm:grid-cols-2 gap-4">
+<div>
+<label class="block text-xs font-extrabold text-slate-700 uppercase tracking-wider mb-1.5">Full Name *</label>
+<input class="w-full rounded-xl border border-slate-300 px-4 py-3 text-sm focus:outline-none focus:border-emerald-500" id="cf-name" placeholder="Alex Rivera" required="" type="text"/>
+</div>
+<div>
+<label class="block text-xs font-extrabold text-slate-700 uppercase tracking-wider mb-1.5">Email Address *</label>
+<input class="w-full rounded-xl border border-slate-300 px-4 py-3 text-sm focus:outline-none focus:border-emerald-500" id="cf-email" placeholder="alex@example.com" required="" type="email"/>
+</div>
+</div>
+<div class="grid sm:grid-cols-2 gap-4">
+<div>
+<label class="block text-xs font-extrabold text-slate-700 uppercase tracking-wider mb-1.5">Topic</label>
+<select class="w-full rounded-xl border border-slate-300 px-4 py-3 text-sm bg-white focus:outline-none focus:border-emerald-500" id="cf-topic">
+<option>Airline Size &amp; Product Question</option>
+<option>Order Status &amp; Tracking</option>
+<option>BOGO 2-Pack Bundle Question</option>
+<option>Returns &amp; 30-Day Guarantee</option>
+</select>
+</div>
+<div>
+<label class="block text-xs font-extrabold text-slate-700 uppercase tracking-wider mb-1.5">Order Number (Optional)</label>
+<input class="w-full rounded-xl border border-slate-300 px-4 py-3 text-sm focus:outline-none focus:border-emerald-500" id="cf-order" placeholder="#VP-XXXX" type="text"/>
+</div>
+</div>
+<div>
+<label class="block text-xs font-extrabold text-slate-700 uppercase tracking-wider mb-1.5">How Can We Help? *</label>
+<textarea class="w-full rounded-xl border border-slate-300 px-4 py-3 text-sm focus:outline-none focus:border-emerald-500" id="cf-msg" placeholder="Tell us your question or airline details and we'll get right back to you..." required="" rows="4"></textarea>
+</div>
+<button class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-extrabold text-base py-4 rounded-2xl shadow-lg shadow-emerald-600/20 transition cursor-pointer" type="submit">
+                            Send Message
                         </button>
-                    </form>
-
-                    <!-- Confirmation State -->
-                    <div id="contact-success" class="hidden text-center py-8 space-y-4">
-                        <div class="w-14 h-14 rounded-full bg-emerald-100 text-emerald-600 text-2xl font-extrabold flex items-center justify-center mx-auto">✓</div>
-                        <h3 class="text-2xl font-extrabold text-slate-950">Message Received!</h3>
-                        <p class="text-sm text-slate-600 max-w-md mx-auto">
-                            Thanks <span id="cf-confirm-name" class="font-bold text-slate-950"></span>! Your support ticket <span id="cf-ticket-id" class="font-mono font-bold text-emerald-600"></span> has been logged and we'll reply to <span id="cf-confirm-email" class="font-bold text-slate-950"></span> within 4 hours.
+</form>
+<!-- Confirmation State -->
+<div class="hidden text-center py-8 space-y-4" id="contact-success">
+<div class="w-14 h-14 rounded-full bg-emerald-100 text-emerald-600 text-2xl font-extrabold flex items-center justify-center mx-auto">✓</div>
+<h3 class="text-2xl font-extrabold text-slate-950">Message Received</h3>
+<p class="text-sm text-slate-600 max-w-md mx-auto">
+                            Thanks <span class="font-bold text-slate-950" id="cf-confirm-name"></span>! Your support ticket <span class="font-mono font-bold text-emerald-600" id="cf-ticket-id"></span> is logged. We will reply to <span class="font-bold text-slate-950" id="cf-confirm-email"></span> within 4 hours.
                         </p>
-                        <div class="pt-2 flex justify-center gap-3">
-                            <button onclick="resetContactForm()" class="px-5 py-2.5 rounded-xl border border-slate-300 text-xs font-bold text-slate-700 hover:bg-slate-50 cursor-pointer">
+<div class="pt-2 flex justify-center gap-3">
+<button class="px-5 py-2.5 rounded-xl border border-slate-300 text-xs font-bold text-slate-700 hover:bg-slate-50 cursor-pointer" onclick="resetContactForm()">
                                 Send Another Message
                             </button>
-                            <button onclick="switchPage('home')" class="px-5 py-2.5 rounded-xl bg-slate-950 text-white text-xs font-bold hover:bg-emerald-600 cursor-pointer">
-                                Back to Storefront
+<button class="px-5 py-2.5 rounded-xl bg-slate-950 text-white text-xs font-bold hover:bg-emerald-600 cursor-pointer" onclick="switchPage('home')">
+                                Back to Shop
                             </button>
-                        </div>
-                    </div>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+<!-- Shared Footer Across All Pages -->
+<footer class="bg-slate-950 text-slate-400 border-t border-slate-900 pb-24 md:pb-12">
+<div class="max-w-6xl mx-auto px-5 py-12 grid sm:grid-cols-2 md:grid-cols-4 gap-8 text-xs">
+<div class="space-y-3">
+<div class="text-xl font-extrabold text-white flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-emerald-500 inline-block"></span>VakuPack™
                 </div>
-            </div>
-        </main>
-    </div>
-
-    <!-- Shared Footer Across All Pages -->
-    <footer class="bg-slate-950 text-slate-400 border-t border-slate-900 pb-24 md:pb-12">
-        <div class="max-w-6xl mx-auto px-5 py-12 grid sm:grid-cols-2 md:grid-cols-4 gap-8 text-xs">
-            <div class="space-y-3">
-                <div class="text-xl font-extrabold text-white flex items-center gap-1.5">
-                    <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 inline-block"></span>VakuPack™
-                </div>
-                <p class="leading-relaxed">Engineered vacuum-compression travel gear built to eliminate airline baggage fees.</p>
-            </div>
-            <div class="space-y-2">
-                <div class="font-extrabold text-white uppercase tracking-wider">Pages</div>
-                <div><button onclick="switchPage('home')" class="hover:text-white transition">Home & Product</button></div>
-                <div><button onclick="switchPage('about')" class="hover:text-white transition">About Us</button></div>
-                <div><button onclick="switchPage('contact')" class="hover:text-white transition">Contact Support</button></div>
-            </div>
-            <div class="space-y-2">
-                <div class="font-extrabold text-white uppercase tracking-wider">Shop</div>
-                <div><button onclick="addBundleDirectly('single')" class="hover:text-white transition">1× VakuPack™ Pro ($54.99)</button></div>
-                <div><button onclick="addBundleDirectly('bogo')" class="hover:text-white transition">2× BOGO Bundle ($79.99)</button></div>
-                <div><button onclick="toggleCart(true)" class="hover:text-white transition">Open Shopping Cart</button></div>
-            </div>
-            <div class="space-y-2">
-                                <div class="font-extrabold text-white uppercase tracking-wider">Guarantee & Policies</div>
-                <p class="leading-relaxed">30-Day Airline Sizer Fit Guarantee • 24-Hour Order Dispatch • 256-Bit SSL Checkout</p>
-                <div class="pt-1 flex flex-wrap gap-3 text-slate-300 font-semibold">
-                    <button onclick="openLegalModal('refund')" class="hover:text-emerald-400 underline cursor-pointer">Refund Policy</button>
-                    <button onclick="openLegalModal('privacy')" class="hover:text-emerald-400 underline cursor-pointer">Privacy Policy</button>
-                    <button onclick="openLegalModal('terms')" class="hover:text-emerald-400 underline cursor-pointer">Terms of Service</button>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- ========================================================= -->
-    <!-- STICKY CORNER SHOPPING CART BUTTON (FLOATING BOTTOM-RIGHT) -->
-    <!-- ========================================================= -->
-    <button id="sticky-cart-btn" onclick="toggleCart(true)" aria-label="Open shopping cart"
-        class="fixed bottom-20 md:bottom-6 right-5 z-40 flex items-center gap-2.5 bg-slate-950 hover:bg-emerald-600 text-white px-4 py-3.5 rounded-full shadow-2xl border border-slate-700/80 transition-all duration-200 cursor-pointer">
-        <div class="relative">
-            <svg class="w-6 h-6 text-emerald-400" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
-            </svg>
-            <span id="sticky-cart-count" class="absolute -top-2 -right-2.5 min-w-[20px] h-5 px-1 rounded-full bg-emerald-500 text-slate-950 text-[11px] font-extrabold flex items-center justify-center shadow-xs">
+<p class="leading-relaxed">Vacuum compression travel bags built to skip baggage fees.</p>
+</div>
+<div class="space-y-2">
+<div class="font-extrabold text-white uppercase tracking-wider">Pages</div>
+<div><button class="hover:text-white transition" onclick="switchPage('home')">Shop Bags</button></div>
+<div><button class="hover:text-white transition" onclick="switchPage('about')">About Us</button></div>
+<div><button class="hover:text-white transition" onclick="switchPage('contact')">Contact Us</button></div>
+</div>
+<div class="space-y-2">
+<div class="font-extrabold text-white uppercase tracking-wider">Shop</div>
+<div><button class="hover:text-white transition" onclick="addBundleDirectly('single')">1x VakuPack Pro ($54.99)</button></div>
+<div><button class="hover:text-white transition" onclick="addBundleDirectly('bogo')">2x BOGO Bundle ($79.99)</button></div>
+<div><button class="hover:text-white transition" onclick="toggleCart(true)">View Cart</button></div>
+</div>
+<div class="space-y-2">
+<div class="font-extrabold text-white uppercase tracking-wider">Guarantees and Policies</div>
+<p class="leading-relaxed">30 Day Sizer Guarantee • 24 Hour Dispatch • Secure SSL Checkout</p>
+<div class="pt-1 flex flex-wrap gap-3 text-slate-300 font-semibold">
+<button class="hover:text-emerald-400 underline cursor-pointer" onclick="openLegalModal('refund')">Refund Policy</button>
+<button class="hover:text-emerald-400 underline cursor-pointer" onclick="openLegalModal('privacy')">Privacy Policy</button>
+<button class="hover:text-emerald-400 underline cursor-pointer" onclick="openLegalModal('terms')">Terms of Service</button>
+</div>
+</div>
+</div>
+</footer>
+<!-- ========================================================= -->
+<!-- STICKY CORNER SHOPPING CART BUTTON (FLOATING BOTTOM-RIGHT) -->
+<!-- ========================================================= -->
+<button aria-label="Open shopping cart" class="fixed bottom-20 md:bottom-6 right-5 z-40 flex items-center gap-2.5 bg-slate-950 hover:bg-emerald-600 text-white px-4 py-3.5 rounded-full shadow-2xl border border-slate-700/80 transition-all duration-200 cursor-pointer" id="sticky-cart-btn" onclick="toggleCart(true)">
+<div class="relative">
+<svg class="w-6 h-6 text-emerald-400" fill="none" stroke="currentColor" stroke-width="2.2" viewbox="0 0 24 24">
+<path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+<span class="absolute -top-2 -right-2.5 min-w-[20px] h-5 px-1 rounded-full bg-emerald-500 text-slate-950 text-[11px] font-extrabold flex items-center justify-center shadow-xs" id="sticky-cart-count">
                 0
             </span>
-        </div>
-        <span class="hidden sm:inline text-xs font-extrabold tracking-wide pr-1">Cart</span>
-    </button>
-
-    <!-- ========================================================= -->
-    <!-- POP-OUT SLIDE-OVER SHOPPING CART DRAWER                   -->
-    <!-- ========================================================= -->
-    <div id="cart-drawer-overlay" onclick="toggleCart(false)" class="hidden fixed inset-0 z-50 bg-slate-950/60 backdrop-blur-xs transition-opacity">
-        <aside id="cart-drawer-panel" onclick="event.stopPropagation()" class="ml-auto w-full max-w-md bg-white h-full shadow-2xl flex flex-col justify-between">
-            <!-- Drawer Header -->
-            <div>
-                <div class="px-6 py-4 border-b border-slate-200 flex items-center justify-between">
-                    <div class="flex items-center gap-2">
-                        <span class="font-extrabold text-lg text-slate-950">Your Travel Bag</span>
-                        <span id="drawer-count-pill" class="bg-emerald-100 text-emerald-800 text-xs font-extrabold px-2.5 py-0.5 rounded-full">0 items</span>
-                    </div>
-                    <button onclick="toggleCart(false)" aria-label="Close cart" class="w-8 h-8 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-700 font-extrabold text-sm flex items-center justify-center cursor-pointer">
+</div>
+<span class="hidden sm:inline text-xs font-extrabold tracking-wide pr-1">Cart</span>
+</button>
+<!-- ========================================================= -->
+<!-- POP-OUT SLIDE-OVER SHOPPING CART DRAWER                   -->
+<!-- ========================================================= -->
+<div class="hidden fixed inset-0 z-50 bg-slate-950/60 backdrop-blur-xs transition-opacity" id="cart-drawer-overlay" onclick="toggleCart(false)">
+<aside class="ml-auto w-full max-w-md bg-white h-full shadow-2xl flex flex-col justify-between" id="cart-drawer-panel" onclick="event.stopPropagation()">
+<!-- Drawer Header -->
+<div>
+<div class="px-6 py-4 border-b border-slate-200 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="font-extrabold text-lg text-slate-950">Your Cart</span>
+<span class="bg-emerald-100 text-emerald-800 text-xs font-extrabold px-2.5 py-0.5 rounded-full" id="drawer-count-pill">0 items</span>
+</div>
+<button aria-label="Close cart" class="w-8 h-8 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-700 font-extrabold text-sm flex items-center justify-center cursor-pointer" onclick="toggleCart(false)">
                         ✕
                     </button>
+</div>
+<!-- Free Shipping Banner -->
+<div class="bg-emerald-50 border-b border-emerald-100 px-6 py-2.5 text-xs font-bold text-emerald-800 flex items-center justify-between">
+<span>🚚 Free Express Shipping Unlocked</span>
+<span>✓</span>
+</div>
+</div>
+<!-- Scrollable Cart Items Area -->
+<div class="flex-1 overflow-y-auto p-6 space-y-4" id="cart-items-container">
+<!-- Populated dynamically by JS -->
+</div>
+<!-- Drawer Footer & Checkout -->
+<div class="p-6 border-t border-slate-200 bg-slate-50 space-y-3" id="cart-drawer-footer">
+<div class="flex justify-between text-xs font-semibold text-slate-500">
+<span>Tracked Express Shipping</span>
+<span class="text-emerald-600 font-extrabold">FREE</span>
+</div>
+<div class="flex justify-between text-xs font-semibold text-emerald-700">
+<span>Bundle Savings</span>
+<span id="cart-savings">$0.00</span>
+</div>
+<div class="flex justify-between items-baseline pt-2 border-t border-slate-200">
+<span class="font-extrabold text-base text-slate-950">Total</span>
+<span class="font-extrabold text-2xl text-slate-950" id="cart-subtotal">$0.00</span>
+</div>
+<a class="w-full flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white font-extrabold text-base py-4 rounded-2xl shadow-lg shadow-emerald-600/20 transition" href="https://buy.stripe.com/dRm8wP1vn6if8dN8N89sk01" id="cart-checkout-btn">
+<span>Check Out Now</span>
+<span>→</span>
+</a>
+<div class="text-center text-[11px] text-slate-500 font-medium">
+                    🛡️ 30 Day Money Back Guarantee • 🔒 SSL Secure
                 </div>
-
-                <!-- Free Shipping Banner -->
-                <div class="bg-emerald-50 border-b border-emerald-100 px-6 py-2.5 text-xs font-bold text-emerald-800 flex items-center justify-between">
-                    <span>🚚 FREE Express Tracked Shipping Unlocked!</span>
-                    <span>✓</span>
-                </div>
-            </div>
-
-            <!-- Scrollable Cart Items Area -->
-            <div id="cart-items-container" class="flex-1 overflow-y-auto p-6 space-y-4">
-                <!-- Populated dynamically by JS -->
-            </div>
-
-            <!-- Drawer Footer & Checkout -->
-            <div id="cart-drawer-footer" class="p-6 border-t border-slate-200 bg-slate-50 space-y-3">
-                <div class="flex justify-between text-xs font-semibold text-slate-500">
-                    <span>Express Tracked Shipping</span>
-                    <span class="text-emerald-600 font-extrabold">FREE</span>
-                </div>
-                <div class="flex justify-between text-xs font-semibold text-emerald-700">
-                    <span>Bundle Savings</span>
-                    <span id="cart-savings">$0.00</span>
-                </div>
-                <div class="flex justify-between items-baseline pt-2 border-t border-slate-200">
-                    <span class="font-extrabold text-base text-slate-950">Total</span>
-                    <span id="cart-subtotal" class="font-extrabold text-2xl text-slate-950">$0.00</span>
-                </div>
-                <a id="cart-checkout-btn" href="https://buy.stripe.com/dRm8wP1vn6if8dN8N89sk01" class="w-full flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white font-extrabold text-base py-4 rounded-2xl shadow-lg shadow-emerald-600/20 transition">
-                    <span>Proceed to Checkout</span>
-                    <span>→</span>
-                </a>
-                <div class="text-center text-[11px] text-slate-500 font-medium">
-                    🛡️ 30-Day Money-Back Guarantee • 🔒 SSL Secure
-                </div>
-            </div>
-        </aside>
-    </div>
-
-    <!-- Sticky Mobile Bottom Checkout Bar -->
-    <div class="fixed bottom-0 inset-x-0 bg-white/95 backdrop-blur border-t border-slate-200 p-3.5 md:hidden z-30 flex items-center justify-between gap-3">
-        <div>
-            <div id="mobile-label" class="text-xs font-extrabold text-slate-950">2× VakuPack™ Pro (BOGO)</div>
-            <div id="mobile-price" class="text-sm font-extrabold text-emerald-600">$79.99 <span class="text-xs text-slate-400 line-through">$239.98</span></div>
-        </div>
-        <button onclick="addSelectedBundleToCart()" class="bg-emerald-600 text-white font-extrabold text-sm px-5 py-3 rounded-xl shadow-md">
-            Add to Cart →
+</div>
+</aside>
+</div>
+<!-- Sticky Mobile Bottom Checkout Bar -->
+<div class="fixed bottom-0 inset-x-0 bg-white/95 backdrop-blur border-t border-slate-200 p-3.5 md:hidden z-30 flex items-center justify-between gap-3">
+<div>
+<div class="text-xs font-extrabold text-slate-950" id="mobile-label">2x VakuPack Pro (BOGO)</div>
+<div class="text-sm font-extrabold text-emerald-600" id="mobile-price">$79.99 <span class="text-xs text-slate-400 line-through">$239.98</span></div>
+</div>
+<button class="bg-emerald-600 text-white font-extrabold text-sm px-5 py-3 rounded-xl shadow-md" onclick="addSelectedBundleToCart()">
+            Add to Cart
         </button>
-    </div>
-
-    <!-- Review Picture Lightbox Modal -->
-    <div id="rev-lightbox" onclick="this.classList.add('hidden')" class="hidden fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-xs flex items-center justify-center p-4">
-        <div class="bg-white p-2 rounded-2xl max-w-md w-full shadow-2xl relative" onclick="event.stopPropagation()">
-            <button onclick="document.getElementById('rev-lightbox').classList.add('hidden')" class="absolute -top-3 -right-3 w-8 h-8 rounded-full bg-slate-950 text-white text-xs font-extrabold shadow-md">✕</button>
-            <img id="rev-lightbox-img" src="" alt="Customer review photo" class="w-full max-h-[75vh] object-contain rounded-xl bg-slate-100" />
-        </div>
-    </div>
-
-    <script>
+</div>
+<!-- Review Picture Lightbox Modal -->
+<div class="hidden fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-xs flex items-center justify-center p-4" id="rev-lightbox" onclick="this.classList.add('hidden')">
+<div class="bg-white p-2 rounded-2xl max-w-md w-full shadow-2xl relative" onclick="event.stopPropagation()">
+<button class="absolute -top-3 -right-3 w-8 h-8 rounded-full bg-slate-950 text-white text-xs font-extrabold shadow-md" onclick="document.getElementById('rev-lightbox').classList.add('hidden')">✕</button>
+<img alt="Customer review photo" class="w-full max-h-[75vh] object-contain rounded-xl bg-slate-100" id="rev-lightbox-img" src=""/>
+</div>
+</div>
+<script>
         const SINGLE_URL = "https://buy.stripe.com/fZu00ja1TbCz8dNfbw9sk00";
         const BOGO_URL = "https://buy.stripe.com/dRm8wP1vn6if8dN8N89sk01";
         const TRIPLE_URL = "https://buy.stripe.com/aFaeVdfmd9ureCb9Rc9sk02";
@@ -1238,18 +1187,17 @@
         renderReviews(VAKUPACK_REVIEWS);
         renderCart();
     </script>
-    <!-- Legal Policy Modal (Refund / Privacy / Terms) -->
-    <div id="legal-modal" onclick="this.classList.add('hidden')" class="hidden fixed inset-0 z-50 bg-slate-950/75 backdrop-blur-xs flex items-center justify-center p-4">
-        <div class="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-8 shadow-2xl relative space-y-4" onclick="event.stopPropagation()">
-            <div class="flex items-center justify-between border-b border-slate-200 pb-3">
-                <h3 id="legal-modal-title" class="font-extrabold text-lg text-slate-950">Policy</h3>
-                <button onclick="document.getElementById('legal-modal').classList.add('hidden')" class="w-8 h-8 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-800 font-extrabold text-xs cursor-pointer">✕</button>
-            </div>
-            <div id="legal-modal-body" class="text-xs sm:text-sm text-slate-600 leading-relaxed space-y-3 max-h-[60vh] overflow-y-auto"></div>
-        </div>
-    </div>
-
-    <script>
+<!-- Legal Policy Modal (Refund / Privacy / Terms) -->
+<div class="hidden fixed inset-0 z-50 bg-slate-950/75 backdrop-blur-xs flex items-center justify-center p-4" id="legal-modal" onclick="this.classList.add('hidden')">
+<div class="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-8 shadow-2xl relative space-y-4" onclick="event.stopPropagation()">
+<div class="flex items-center justify-between border-b border-slate-200 pb-3">
+<h3 class="font-extrabold text-lg text-slate-950" id="legal-modal-title">Policy</h3>
+<button class="w-8 h-8 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-800 font-extrabold text-xs cursor-pointer" onclick="document.getElementById('legal-modal').classList.add('hidden')">✕</button>
+</div>
+<div class="text-xs sm:text-sm text-slate-600 leading-relaxed space-y-3 max-h-[60vh] overflow-y-auto" id="legal-modal-body"></div>
+</div>
+</div>
+<script>
         // Dynamic Arrival Date Estimator (+5 to +9 days from today)
         (function setDeliveryDates() {
             const el = document.getElementById('est-delivery-range');
