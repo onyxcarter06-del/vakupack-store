@@ -811,6 +811,7 @@
     <script>
         const SINGLE_URL = "https://buy.stripe.com/fZu00ja1TbCz8dNfbw9sk00";
         const BOGO_URL = "https://buy.stripe.com/dRm8wP1vn6if8dN8N89sk01";
+        const TRIPLE_URL = "https://buy.stripe.com/aFaeVdfmd9ureCb9Rc9sk02";
         const PROD_THUMB = "images/product_1.png";
         const VAKUPACK_REVIEWS = [{"name": "Marcus T.", "badge": "Verified Buyer", "stars": 5, "date": "2 days ago", "title": "Slid straight into Frontier's personal-item sizer", "text": "Packed 4 heavy hoodies, 2 pairs of jeans, sneakers, and my 16-inch laptop for a 4-day trip. Attached the little USB-C pump for 15 seconds and watched the whole bag flatten right down. Saved $79 at the gate.", "photos": ["images/rev_snap_1.jpg", "images/product_1.png"]}, {"name": "Elena R.", "badge": "Verified Flyer", "stars": 5, "date": "5 days ago", "title": "Saved us $140 on our first round-trip flight", "text": "Grabbed the two-pack so my boyfriend and I could both skip checked luggage for a 5-day flight. Honestly didn't expect the inner vacuum liner to compress puffy winter jackets that much without puffing back up.", "photos": ["images/rev_snap_2.jpg"]}, {"name": "Devon K.", "badge": "Verified Buyer", "stars": 5, "date": "1 week ago", "title": "Feels like a $200+ tactical travel pack", "text": "Super thick zippers, waterproof shell held up in pouring rain outside the terminal, and the mini pump is smaller than an AirPods case. Easily fits 6 days of clothes.", "photos": ["images/rev_snap_3.jpg"]}, {"name": "Jordan M.", "badge": "Verified Buyer", "stars": 4, "date": "1 week ago", "title": "Crazy compression\u2014zipper is snug at first", "text": "Took off half a star only because the airtight vacuum zipper is stiff the first two times you pull it, which makes sense since it has to seal air-tight. Once zipped, it shrinks down nearly half its size.", "photos": ["images/product_1.png"]}, {"name": "Kayla S.", "badge": "Verified Flyer", "stars": 5, "date": "2 weeks ago", "title": "Best college weekend & flight bag I own", "text": "Used it on Delta Basic Economy and United\u2014zero questions asked at boarding and slid right under the seat in front of me with room for my feet.", "photos": []}, {"name": "Chris B.", "badge": "Verified Buyer", "stars": 4, "date": "2 weeks ago", "title": "USB-C pump works fast, great laptop padding", "text": "Padded back sleeve protected my 17-inch laptop easily and the wet/dry pocket kept gym clothes separate from clean shirts. Definitely worth it over paying airline bag fees.", "photos": []}, {"name": "Tasha W.", "badge": "Verified Buyer", "stars": 5, "date": "3 weeks ago", "title": "Air seal held for an entire 9-hour international flight", "text": "Compressed it before leaving for the airport and it stayed completely flat until I opened the valve at my hotel. Hands down my favorite travel purchase this year.", "photos": ["images/rev_snap_1.jpg"]}];
 
@@ -921,9 +922,7 @@
 
         function addBundleDirectly(type) {
             const existing = cart.find(item => item.id === type);
-            if (existing) {
-                existing.qty += 1;
-            } else {
+            if (!existing) {
                 cart.push({ id: type, qty: 1 });
             }
             saveCart();
@@ -940,11 +939,8 @@
         }
 
         function updateCartQty(id, delta) {
-            const idx = cart.findIndex(item => item.id === id);
-            if (idx === -1) return;
-            cart[idx].qty += delta;
-            if (cart[idx].qty <= 0) {
-                cart.splice(idx, 1);
+            if (delta < 0) {
+                cart = cart.filter(item => item.id !== id);
             }
             saveCart();
         }
@@ -1022,11 +1018,7 @@
                         <div class="font-extrabold text-xs sm:text-sm text-slate-950 truncate">${prod.title}</div>
                         <div class="text-[11px] text-slate-500">${prod.subtitle}</div>
                         <div class="flex items-center justify-between mt-2">
-                            <div class="inline-flex items-center border border-slate-200 rounded-lg overflow-hidden">
-                                <button onclick="updateCartQty('${item.id}', -1)" class="px-2.5 py-1 text-xs font-extrabold text-slate-700 hover:bg-slate-100 cursor-pointer">−</button>
-                                <span class="px-2.5 py-1 text-xs font-bold text-slate-950">${item.qty}</span>
-                                <button onclick="updateCartQty('${item.id}', 1)" class="px-2.5 py-1 text-xs font-extrabold text-slate-700 hover:bg-slate-100 cursor-pointer">+</button>
-                            </div>
+                            <button onclick="updateCartQty('${item.id}', -1)" class="text-xs font-bold text-rose-600 hover:underline cursor-pointer">Remove</button>
                             <div class="font-extrabold text-sm text-slate-950">$${(prod.price * item.qty).toFixed(2)}</div>
                         </div>
                     </div>
@@ -1034,7 +1026,7 @@
             }).join('');
 
             // Smart 1-click BOGO upsell if user only added Single Pack
-            if (cart.some(i => i.id === 'single')) {
+            if (cart.length === 1 && cart[0].id === 'single') {
                 itemsHtml += `
                 <div class="p-3.5 rounded-2xl bg-emerald-50 border border-emerald-200 flex items-center justify-between gap-3">
                     <div>
@@ -1050,7 +1042,9 @@
             container.innerHTML = itemsHtml;
             document.getElementById('cart-subtotal').textContent = `$${subtotal.toFixed(2)}`;
             document.getElementById('cart-savings').textContent = `-$${(totalCompare - subtotal).toFixed(2)}`;
-            document.getElementById('cart-checkout-btn').href = cart.some(i => i.id === 'bogo') ? BOGO_URL : SINGLE_URL;
+            const hasSingle = cart.some(i => i.id === 'single');
+            const hasBogo = cart.some(i => i.id === 'bogo');
+            document.getElementById('cart-checkout-btn').href = (hasSingle && hasBogo) ? TRIPLE_URL : (hasBogo ? BOGO_URL : SINGLE_URL);
         }
 
         // --- CONTACT US FORM & ORDER LOOKUP ---
