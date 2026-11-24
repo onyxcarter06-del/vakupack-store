@@ -17,6 +17,35 @@
         }
         .cart-pop { animation: pulsePop 0.35s ease; }
     </style>
+    <meta name="description" content="Fit 7 outfits where 4 used to go. VakuPack™ Pro vacuum-compression travel backpack includes a free USB-C turbo pump and fits Spirit, Frontier & Delta under-seat sizers." />
+    <meta property="og:type" content="product" />
+    <meta property="og:title" content="VakuPack™ Pro — Vacuum-Compression Travel Backpack + Free USB-C Pump" />
+    <meta property="og:description" content="Shrink bulky clothes by 50%+ in 15 seconds and pay $0 airline baggage fees. 4.9★ rated by 4,280+ flyers." />
+    <meta property="og:image" content="images/product_1.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "Product",
+      "name": "VakuPack™ Pro Vacuum-Compression Backpack",
+      "image": ["images/product_1.png"],
+      "description": "Airline-approved 18x14x8 vacuum-compression travel backpack with built-in airtight TPU chamber and included USB-C turbo pump.",
+      "brand": { "@type": "Brand", "name": "VakuPack" },
+      "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "USD",
+        "lowPrice": "54.99",
+        "highPrice": "134.98",
+        "offerCount": "3",
+        "availability": "https://schema.org/InStock"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "4280"
+      }
+    }
+    </script>
 </head>
 <body class="bg-white text-slate-900 antialiased selection:bg-emerald-500 selection:text-white">
 
@@ -200,7 +229,15 @@
                         </a>
                     </div>
 
-                    <div class="grid grid-cols-3 gap-2 mt-4 pt-4 border-t border-slate-100 text-center text-xs text-slate-600 font-medium">
+                                        <div class="mt-3.5 bg-emerald-50/80 border border-emerald-200/80 rounded-2xl px-4 py-2.5 flex items-center justify-between text-xs">
+                        <div class="flex items-center gap-2 font-bold text-slate-900">
+                            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                            <span>Order today → <span class="text-emerald-700 font-extrabold">Arrives by <span id="est-delivery-range">next week</span></span></span>
+                        </div>
+                        <span class="font-extrabold text-emerald-700 uppercase tracking-wider text-[10px]">FREE Tracked</span>
+                    </div>
+
+                    <div class="grid grid-cols-3 gap-2 mt-3 pt-3 border-t border-slate-100 text-center text-xs text-slate-600 font-medium">
                         <div>🛡️ 30-Day Money Back</div>
                         <div>✈️ TSA-Approved Pump</div>
                         <div>🔒 256-Bit SSL Checkout</div>
@@ -713,8 +750,13 @@
                 <div><button onclick="toggleCart(true)" class="hover:text-white transition">Open Shopping Cart</button></div>
             </div>
             <div class="space-y-2">
-                <div class="font-extrabold text-white uppercase tracking-wider">Guarantee</div>
-                <p class="leading-relaxed">30-Day Airline Sizer Fit Guarantee • 24-Hour Order Dispatch • 256-Bit SSL Encrypted Checkout</p>
+                                <div class="font-extrabold text-white uppercase tracking-wider">Guarantee & Policies</div>
+                <p class="leading-relaxed">30-Day Airline Sizer Fit Guarantee • 24-Hour Order Dispatch • 256-Bit SSL Checkout</p>
+                <div class="pt-1 flex flex-wrap gap-3 text-slate-300 font-semibold">
+                    <button onclick="openLegalModal('refund')" class="hover:text-emerald-400 underline cursor-pointer">Refund Policy</button>
+                    <button onclick="openLegalModal('privacy')" class="hover:text-emerald-400 underline cursor-pointer">Privacy Policy</button>
+                    <button onclick="openLegalModal('terms')" class="hover:text-emerald-400 underline cursor-pointer">Terms of Service</button>
+                </div>
             </div>
         </div>
     </footer>
@@ -1195,6 +1237,44 @@
         // Initialize Reviews & Cart on Load
         renderReviews(VAKUPACK_REVIEWS);
         renderCart();
+    </script>
+    <!-- Legal Policy Modal (Refund / Privacy / Terms) -->
+    <div id="legal-modal" onclick="this.classList.add('hidden')" class="hidden fixed inset-0 z-50 bg-slate-950/75 backdrop-blur-xs flex items-center justify-center p-4">
+        <div class="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-8 shadow-2xl relative space-y-4" onclick="event.stopPropagation()">
+            <div class="flex items-center justify-between border-b border-slate-200 pb-3">
+                <h3 id="legal-modal-title" class="font-extrabold text-lg text-slate-950">Policy</h3>
+                <button onclick="document.getElementById('legal-modal').classList.add('hidden')" class="w-8 h-8 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-800 font-extrabold text-xs cursor-pointer">✕</button>
+            </div>
+            <div id="legal-modal-body" class="text-xs sm:text-sm text-slate-600 leading-relaxed space-y-3 max-h-[60vh] overflow-y-auto"></div>
+        </div>
+    </div>
+
+    <script>
+        // Dynamic Arrival Date Estimator (+5 to +9 days from today)
+        (function setDeliveryDates() {
+            const el = document.getElementById('est-delivery-range');
+            if (!el) return;
+            const opts = { month: 'short', day: 'numeric' };
+            const d1 = new Date(Date.now() + 5 * 86400000).toLocaleDateString('en-US', opts);
+            const d2 = new Date(Date.now() + 9 * 86400000).toLocaleDateString('en-US', opts);
+            el.textContent = `${d1} – ${d2}`;
+        })();
+
+        function openLegalModal(type) {
+            const titles = {
+                refund: '30-Day Refund & Airline Sizer Guarantee',
+                privacy: 'Privacy Policy',
+                terms: 'Terms of Service'
+            };
+            const bodies = {
+                refund: '<p><strong>30-Day Money-Back Guarantee:</strong> Try VakuPack™ Pro on your trip risk-free. If you are not 100% satisfied—or if your compressed bag ever fails to fit an airline personal-item sizer—contact <strong>support@vakupack.com</strong> within 30 days of delivery for a full refund.</p><p><strong>Damaged or Defective Items:</strong> If your backpack or USB-C pump arrives damaged, send a quick photo and we will ship a free replacement immediately.</p>',
+                privacy: '<p><strong>Information We Collect:</strong> When you purchase from VakuPack™, we collect only the shipping name, delivery address, phone number, and email needed to fulfill and track your order via Stripe and our fulfillment partners.</p><p><strong>Data Security:</strong> All payments are encrypted and processed directly by Stripe (PCI-DSS Level 1 certified). We never store credit card numbers or sell customer information.</p>',
+                terms: '<p><strong>Order Processing:</strong> Orders dispatch within 24–48 business hours with tracking sent to your checkout email. Estimated transit time is 5–9 business days.</p><p><strong>Support:</strong> For order questions or changes, reach our team anytime via the Contact Us page or at <strong>support@vakupack.com</strong>.</p>'
+            };
+            document.getElementById('legal-modal-title').textContent = titles[type] || 'Policy';
+            document.getElementById('legal-modal-body').innerHTML = bodies[type] || '';
+            document.getElementById('legal-modal').classList.remove('hidden');
+        }
     </script>
 </body>
 </html>
