@@ -51,104 +51,101 @@
 <style id="vakupack-conversion-theme">
         :root {
             --vp-bg: #FFFFFF;
-            --vp-surface: #F8FAFC;
-            --vp-navy: #0F172A;
-            --vp-navy-soft: #1E293B;
-            --vp-body: #334155;
-            --vp-muted: #64748B;
-            --vp-border: #E2E8F0;
-            --vp-cta: #16A34A;
-            --vp-cta-hover: #15803D;
-            --vp-cta-text: #FFFFFF;
-            --vp-cta-shadow: rgba(22, 163, 74, 0.30);
-            --vp-trust: #1D4ED8;
-            --vp-trust-bg: #EFF6FF;
-            --vp-gold: #F59E0B;
+            --vp-surface: #F8F9FA;
+            --vp-black: #111111;
+            --vp-charcoal: #262626;
+            --vp-body: #374151;
             --vp-red: #DC2626;
+            --vp-red-hover: #B91C1C;
+            --vp-red-soft: #FEF2F2;
+            --vp-red-border: #FECACA;
+            --vp-gold: #F59E0B;
         }
 
-        /* 60% Crisp White & Soft Surface Base */
+        /* 60% Crisp White Base */
         html, body {
             background-color: var(--vp-bg) !important;
             color: var(--vp-body) !important;
         }
 
-        /* 30% Authority: Deep Navy Headings, Announcement Bars & Footer */
+        /* 30% Sleek Matte Black Authority */
         h1, h2, h3, h4 {
-            color: var(--vp-navy) !important;
+            color: var(--vp-black) !important;
         }
         .vp-dark-bar, footer {
-            background-color: var(--vp-navy) !important;
-            color: #F8FAFC !important;
+            background-color: var(--vp-black) !important;
+            color: #F9FAFB !important;
         }
         footer h1, footer h2, footer h3, footer h4 {
             color: #FFFFFF !important;
         }
         footer p, footer a, footer li, footer span {
-            color: #CBD5E1;
+            color: #D1D5DB;
         }
         footer a:hover {
             color: #FFFFFF !important;
         }
 
-        /* 10% High-Contrast Action Buttons (Von Restorff Isolation Effect) */
+        /* 10% Single Unified Performance Crimson Red (#DC2626) */
         .vp-cta-primary {
-            background-color: var(--vp-cta) !important;
+            background-color: var(--vp-red) !important;
             background-image: none !important;
-            color: var(--vp-cta-text) !important;
-            border: 1px solid transparent !important;
-            box-shadow: 0 10px 24px -6px var(--vp-cta-shadow) !important;
+            color: #FFFFFF !important;
+            border: 1px solid var(--vp-red) !important;
+            box-shadow: 0 10px 24px -6px rgba(220, 38, 38, 0.34) !important;
             font-weight: 800 !important;
             letter-spacing: -0.01em !important;
             transition: transform 0.16s ease, background-color 0.16s ease, box-shadow 0.16s ease !important;
         }
         .vp-cta-primary:hover {
-            background-color: var(--vp-cta-hover) !important;
+            background-color: var(--vp-red-hover) !important;
+            border-color: var(--vp-red-hover) !important;
             transform: translateY(-1px) !important;
-            box-shadow: 0 14px 28px -6px var(--vp-cta-shadow) !important;
+            box-shadow: 0 14px 28px -6px rgba(185, 28, 28, 0.40) !important;
         }
         .vp-cta-primary:active {
             transform: scale(0.985) !important;
         }
         .vp-cta-primary * {
-            color: var(--vp-cta-text) !important;
+            color: #FFFFFF !important;
         }
 
-        /* Micro-Accents: Warm Gold Review Stars & Tiny Red Save Pills */
-        .vp-stars {
-            color: var(--vp-gold) !important;
-        }
+        /* Consistent Red Badges, Checkmarks & Trust Pills (Zero Clashing Shades) */
         .vp-urgency-pill {
             background-color: var(--vp-red) !important;
             color: #FFFFFF !important;
             border-color: var(--vp-red) !important;
             font-weight: 800 !important;
-            letter-spacing: 0.02em !important;
         }
         .vp-trust-pill {
-            background-color: var(--vp-trust-bg) !important;
-            color: var(--vp-trust) !important;
-            border-color: rgba(29, 78, 216, 0.22) !important;
+            background-color: var(--vp-red-soft) !important;
+            color: var(--vp-red) !important;
+            border-color: var(--vp-red-border) !important;
         }
         .vp-check-accent {
-            color: var(--vp-cta) !important;
+            color: var(--vp-red) !important;
+        }
+
+        /* Authentic Warm Gold Review Stars */
+        .vp-stars {
+            color: var(--vp-gold) !important;
         }
     </style>
 </head>
-<body class="bg-white text-slate-900 antialiased selection:bg-emerald-500 selection:text-white">
+<body class="bg-white text-slate-900 antialiased selection:bg-red-600 selection:text-white">
 <!-- Top Announcement Bar -->
 <div class="bg-slate-950 text-white text-center py-2.5 px-4 text-xs sm:text-sm font-semibold tracking-wide vp-dark-bar">
-<span class="text-emerald-400 font-extrabold">Holiday sale:</span> Free $49 USB-C pump and fast shipping. Ends soon. <span class="font-mono text-emerald-400" id="timer">03:44:19</span>
+<span class="text-red-600 font-extrabold">Holiday sale:</span> Free $49 USB-C pump and fast shipping. Ends soon. <span class="font-mono text-red-600" id="timer">03:44:19</span>
 </div>
 <!-- Main Sticky Navigation Header (Home • About Us • Contact Us + Cart) -->
 <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-100">
 <div class="max-w-6xl mx-auto px-4 sm:px-5 h-16 flex items-center justify-between gap-2">
 <button class="text-xl sm:text-2xl font-extrabold tracking-tight text-slate-950 flex items-center gap-1.5 shrink-0" onclick="switchPage('home')">
-<span class="w-3 h-3 rounded-full bg-emerald-500 inline-block"></span>VakuPack™
+<span class="w-3 h-3 rounded-full bg-red-600 inline-block"></span>VakuPack™
             </button>
 <!-- Page Links (Visible on Mobile & Desktop) -->
 <nav class="flex items-center gap-3 sm:gap-7 text-xs sm:text-sm font-bold text-slate-600">
-<button class="nav-link text-slate-950 border-b-2 border-emerald-500 py-1 transition" data-nav="home" onclick="switchPage('home')">
+<button class="nav-link text-slate-950 border-b-2 border-red-600 py-1 transition" data-nav="home" onclick="switchPage('home')">
                     Home
                 </button>
 <button class="nav-link hover:text-slate-950 py-1 border-b-2 border-transparent transition" data-nav="about" onclick="switchPage('about')">
@@ -163,13 +160,13 @@
 </nav>
 <!-- Header Right Actions -->
 <div class="flex items-center gap-2 shrink-0">
-<button aria-label="Open Cart" class="relative p-2 rounded-full border border-slate-200 hover:border-emerald-500 text-slate-900 transition" onclick="toggleCart(true)">
+<button aria-label="Open Cart" class="relative p-2 rounded-full border border-slate-200 hover:border-red-600 text-slate-900 transition" onclick="toggleCart(true)">
 <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
 <path d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" stroke-linecap="round" stroke-linejoin="round"></path>
 </svg>
-<span class="absolute -top-1.5 -right-1.5 w-5 h-5 rounded-full bg-emerald-600 text-white text-[10px] font-extrabold flex items-center justify-center" id="header-cart-badge">0</span>
+<span class="absolute -top-1.5 -right-1.5 w-5 h-5 rounded-full bg-red-600 text-white text-[10px] font-extrabold flex items-center justify-center" id="header-cart-badge">0</span>
 </button>
-<button class="hidden sm:inline-block bg-slate-950 hover:bg-emerald-600 text-white text-xs sm:text-sm font-bold px-4 py-2 rounded-full transition shadow-sm vp-cta-primary" onclick="jumpToSection('offer-box')">
+<button class="hidden sm:inline-block bg-slate-950 hover:bg-red-600 text-white text-xs sm:text-sm font-bold px-4 py-2 rounded-full transition shadow-sm vp-cta-primary" onclick="jumpToSection('offer-box')">
                     Shop now
                 </button>
 </div>
@@ -188,7 +185,7 @@
 <span class="bg-white/95 border border-slate-200 text-slate-900 text-xs font-bold px-3 py-1 rounded-full shadow-xs">
                                 Fits major airline sizers
                             </span>
-<span class="bg-emerald-500 text-white text-xs font-extrabold px-3 py-1 rounded-full shadow-xs">
+<span class="bg-red-600 text-white text-xs font-extrabold px-3 py-1 rounded-full shadow-xs">
                                 Airtight seal for 7 days
                             </span>
 </div>
@@ -200,7 +197,7 @@
 </div>
 <img alt="VakuPack™ Pro Vacuum-Compression Backpack" class="hidden w-full max-h-[380px] object-contain drop-shadow-2xl transition-all duration-300" id="stage-img" src="images/product_1.png?v=1795563061"/>
 <div class="flex gap-2.5 mt-4 justify-center flex-wrap">
-<button aria-label="Play video" class="stage-thumb relative w-16 h-16 rounded-xl bg-white border-2 border-emerald-500 p-1 hover:border-emerald-500 transition overflow-hidden" onclick="showStage('video', null, this)"><img alt="" class="w-full h-full object-cover rounded-lg" src="images/video_thumb.jpg"/><span class="absolute inset-0 flex items-center justify-center pointer-events-none"><span class="w-7 h-7 rounded-full bg-white/90 text-slate-900 text-xs flex items-center justify-center shadow-md pl-0.5">▶</span></span></button><button class="stage-thumb w-16 h-16 rounded-xl bg-white border-2 border-slate-200 p-1 hover:border-emerald-500 transition" onclick="showStage('img', 'images/product_1.png?v=1795563061', this)"><img alt="Product angle" class="w-full h-full object-contain" src="images/product_1.png?v=1795563061"/></button><button class="stage-thumb w-16 h-16 rounded-xl bg-white border-2 border-slate-200 p-1 hover:border-emerald-500 transition" onclick="showStage('img', 'images/product_2.png?v=1795563061', this)"><img alt="Product angle" class="w-full h-full object-contain" src="images/product_2.png?v=1795563061"/></button><button class="stage-thumb w-16 h-16 rounded-xl bg-white border-2 border-slate-200 p-1 hover:border-emerald-500 transition" onclick="showStage('img', 'images/product_3.png?v=1795563061', this)"><img alt="Product angle" class="w-full h-full object-contain" src="images/product_3.png?v=1795563061"/></button><button class="stage-thumb w-16 h-16 rounded-xl bg-white border-2 border-slate-200 p-1 hover:border-emerald-500 transition" onclick="showStage('img', 'images/product_4.png?v=1795563061', this)"><img alt="Product angle" class="w-full h-full object-contain" src="images/product_4.png?v=1795563061"/></button><button class="stage-thumb w-16 h-16 rounded-xl bg-white border-2 border-slate-200 p-1 hover:border-emerald-500 transition" onclick="showStage('img', 'images/product_5.png?v=1795563061', this)"><img alt="Product angle" class="w-full h-full object-contain" src="images/product_5.png?v=1795563061"/></button>
+<button aria-label="Play video" class="stage-thumb relative w-16 h-16 rounded-xl bg-white border-2 border-red-600 p-1 hover:border-red-600 transition overflow-hidden" onclick="showStage('video', null, this)"><img alt="" class="w-full h-full object-cover rounded-lg" src="images/video_thumb.jpg"/><span class="absolute inset-0 flex items-center justify-center pointer-events-none"><span class="w-7 h-7 rounded-full bg-white/90 text-slate-900 text-xs flex items-center justify-center shadow-md pl-0.5">▶</span></span></button><button class="stage-thumb w-16 h-16 rounded-xl bg-white border-2 border-slate-200 p-1 hover:border-red-600 transition" onclick="showStage('img', 'images/product_1.png?v=1795563061', this)"><img alt="Product angle" class="w-full h-full object-contain" src="images/product_1.png?v=1795563061"/></button><button class="stage-thumb w-16 h-16 rounded-xl bg-white border-2 border-slate-200 p-1 hover:border-red-600 transition" onclick="showStage('img', 'images/product_2.png?v=1795563061', this)"><img alt="Product angle" class="w-full h-full object-contain" src="images/product_2.png?v=1795563061"/></button><button class="stage-thumb w-16 h-16 rounded-xl bg-white border-2 border-slate-200 p-1 hover:border-red-600 transition" onclick="showStage('img', 'images/product_3.png?v=1795563061', this)"><img alt="Product angle" class="w-full h-full object-contain" src="images/product_3.png?v=1795563061"/></button><button class="stage-thumb w-16 h-16 rounded-xl bg-white border-2 border-slate-200 p-1 hover:border-red-600 transition" onclick="showStage('img', 'images/product_4.png?v=1795563061', this)"><img alt="Product angle" class="w-full h-full object-contain" src="images/product_4.png?v=1795563061"/></button><button class="stage-thumb w-16 h-16 rounded-xl bg-white border-2 border-slate-200 p-1 hover:border-red-600 transition" onclick="showStage('img', 'images/product_5.png?v=1795563061', this)"><img alt="Product angle" class="w-full h-full object-contain" src="images/product_5.png?v=1795563061"/></button>
 </div>
 </div>
 <div class="grid grid-cols-3 gap-2 pt-4 mt-4 border-t border-slate-200/70 text-center">
@@ -225,10 +222,10 @@
 <div class="flex text-amber-400 text-sm vp-stars">★★★★★</div>
 <span class="text-xs font-bold text-slate-700">4.9/5 rating (4,280+ flyers)</span>
 <span class="text-slate-300">•</span>
-<span class="text-xs font-semibold text-emerald-600">In stock. Ready to ship.</span>
+<span class="text-xs font-semibold text-red-600">In stock. Ready to ship.</span>
 </div>
 <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-slate-950 leading-[1.08] mb-4">
-                        Pack twice as much. Pay <span class="text-emerald-600">$0 baggage fees.</span>
+                        Pack twice as much. Pay <span class="text-red-600">$0 baggage fees.</span>
 </h1>
 <p class="text-slate-600 text-base sm:text-lg leading-relaxed mb-5">
                         Skip the $75 to $99 gate fees. Pack hoodies, jeans, and shoes inside the <strong>airtight vacuum compartment</strong>, press the included USB-C pump, and compress it flat in <strong>15 seconds.</strong>.
@@ -236,16 +233,16 @@
 <!-- Benefit Bullets -->
 <div class="grid sm:grid-cols-2 gap-2.5 mb-6 text-xs sm:text-sm font-semibold text-slate-800">
 <div class="flex items-center gap-2 bg-slate-50 px-3 py-2 rounded-xl border border-slate-100">
-<span class="text-emerald-600 font-extrabold vp-check-accent">✓</span> Free USB-C pump included
+<span class="text-red-600 font-extrabold vp-check-accent">✓</span> Free USB-C pump included
                         </div>
 <div class="flex items-center gap-2 bg-slate-50 px-3 py-2 rounded-xl border border-slate-100">
-<span class="text-emerald-600 font-extrabold vp-check-accent">✓</span> Smell proof laundry pocket
+<span class="text-red-600 font-extrabold vp-check-accent">✓</span> Smell proof laundry pocket
                         </div>
 <div class="flex items-center gap-2 bg-slate-50 px-3 py-2 rounded-xl border border-slate-100">
-<span class="text-emerald-600 font-extrabold vp-check-accent">✓</span> 180 degree 17.3" laptop sleeve
+<span class="text-red-600 font-extrabold vp-check-accent">✓</span> 180 degree 17.3" laptop sleeve
                         </div>
 <div class="flex items-center gap-2 bg-slate-50 px-3 py-2 rounded-xl border border-slate-100">
-<span class="text-emerald-600 font-extrabold vp-check-accent">✓</span> Water resistant 900D shell
+<span class="text-red-600 font-extrabold vp-check-accent">✓</span> Water resistant 900D shell
                         </div>
 </div>
 <!-- Bundle Selector Cards -->
@@ -254,7 +251,7 @@
 <label class="block cursor-pointer rounded-2xl border-2 border-slate-200 p-4 transition hover:border-slate-400" id="card-single" onclick="selectBundle('single')">
 <div class="flex items-center justify-between">
 <div class="flex items-center gap-3">
-<input class="w-4 h-4 accent-emerald-600" id="radio-single" name="bundle" type="radio"/>
+<input class="w-4 h-4 accent-red-600" id="radio-single" name="bundle" type="radio"/>
 <div>
 <div class="font-bold text-slate-950 text-base">1x VakuPack Pro + Free USB-C pump</div>
 <div class="text-xs text-slate-500">Solo kit with free shipping</div>
@@ -266,16 +263,16 @@
 </div>
 </div>
 </label>
-<label class="block cursor-pointer rounded-2xl border-2 border-emerald-500 bg-emerald-50/40 p-4 relative transition shadow-sm" id="card-bogo" onclick="selectBundle('bogo')">
-<span class="absolute -top-3 right-4 bg-emerald-500 text-white text-[10px] font-extrabold uppercase tracking-wider px-3 py-0.5 rounded-full shadow-xs">
+<label class="block cursor-pointer rounded-2xl border-2 border-red-600 bg-red-50/40 p-4 relative transition shadow-sm" id="card-bogo" onclick="selectBundle('bogo')">
+<span class="absolute -top-3 right-4 bg-red-600 text-white text-[10px] font-extrabold uppercase tracking-wider px-3 py-0.5 rounded-full shadow-xs">
                                 Most popular. Buy 1 get 1 free
                             </span>
 <div class="flex items-center justify-between">
 <div class="flex items-center gap-3">
-<input checked="" class="w-4 h-4 accent-emerald-600" id="radio-bogo" name="bundle" type="radio"/>
+<input checked="" class="w-4 h-4 accent-red-600" id="radio-bogo" name="bundle" type="radio"/>
 <div>
 <div class="font-extrabold text-slate-950 text-base">2x VakuPack bags + 2x USB-C pumps</div>
-<div class="text-xs text-emerald-700 font-semibold">Buy 1 get 1 free ($39.99 each) with fast shipping</div>
+<div class="text-xs text-red-700 font-semibold">Buy 1 get 1 free ($39.99 each) with fast shipping</div>
 </div>
 </div>
 <div class="text-right">
@@ -293,17 +290,17 @@
 </svg>
 <span>Add to cart</span>
 </button>
-<a class="sm:col-span-7 flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white font-extrabold text-base sm:text-lg py-4 px-6 rounded-2xl shadow-lg shadow-emerald-600/20 transition transform active:scale-[0.99] vp-cta-primary" href="https://buy.stripe.com/6oU14n6PH0XV8dN9Rc9sk04" id="main-cta">
+<a class="sm:col-span-7 flex items-center justify-center gap-2 bg-red-600 hover:bg-red-600 text-white font-extrabold text-base sm:text-lg py-4 px-6 rounded-2xl shadow-lg shadow-red-600/20 transition transform active:scale-[0.99] vp-cta-primary" href="https://buy.stripe.com/6oU14n6PH0XV8dN9Rc9sk04" id="main-cta">
 <span>Buy now for $194.99</span>
 <span>→</span>
 </a>
 </div>
-<div class="mt-3.5 bg-emerald-50/80 border border-emerald-200/80 rounded-2xl px-4 py-2.5 flex items-center justify-between text-xs">
+<div class="mt-3.5 bg-red-50/80 border border-red-200/80 rounded-2xl px-4 py-2.5 flex items-center justify-between text-xs">
 <div class="flex items-center gap-2 font-bold text-slate-900">
-<span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-<span>Order now <span class="text-emerald-700 font-extrabold">Arrives by <span id="est-delivery-range">next week</span></span></span>
+<span class="w-2 h-2 rounded-full bg-red-600 animate-pulse"></span>
+<span>Order now <span class="text-red-700 font-extrabold">Arrives by <span id="est-delivery-range">next week</span></span></span>
 </div>
-<span class="font-extrabold text-emerald-700 uppercase tracking-wider text-[10px]">Free Tracked Shipping</span>
+<span class="font-extrabold text-red-700 uppercase tracking-wider text-[10px]">Free Tracked Shipping</span>
 </div>
 <div class="grid grid-cols-3 gap-2 mt-3 pt-3 border-t border-slate-100 text-center text-xs text-slate-600 font-medium">
 <div>🛡️ 30 Day Money Back</div>
@@ -349,7 +346,7 @@
 <!-- EXTRA PRODUCT INFORMATION SECTION: 4-Pillar Engineering Breakdown -->
 <section class="mt-24">
 <div class="text-center max-w-2xl mx-auto mb-12">
-<div class="inline-block bg-emerald-100 text-emerald-800 text-xs font-extrabold uppercase tracking-wider px-3 py-1 rounded-full mb-3">
+<div class="inline-block bg-red-100 text-red-700 text-xs font-extrabold uppercase tracking-wider px-3 py-1 rounded-full mb-3">
                         Built for Carry On Travel
                     </div>
 <h2 class="text-2xl sm:text-4xl font-extrabold text-slate-950 mb-3">Smart Storage For Every Essential</h2>
@@ -357,7 +354,7 @@
 </div>
 <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
 <div class="p-6 rounded-3xl bg-slate-50 border border-slate-200/80">
-<div class="w-11 h-11 rounded-2xl bg-emerald-600 text-white font-extrabold flex items-center justify-center text-lg mb-4">01</div>
+<div class="w-11 h-11 rounded-2xl bg-red-600 text-white font-extrabold flex items-center justify-center text-lg mb-4">01</div>
 <h3 class="font-extrabold text-slate-950 text-lg mb-2">Airtight Vacuum Core</h3>
 <p class="text-sm text-slate-600 leading-relaxed">Thick TPU lining and a one way valve keep air out for 7 straight days.</p>
 </div>
@@ -386,15 +383,15 @@
 <img alt="Vacuum compression travel backpack with pocket USB-C pump" class="w-full h-full aspect-[4/3] sm:aspect-square object-cover" loading="lazy" src="images/feature_split_1.png?v=1795563061"/>
 </div>
 <div class="space-y-4 max-w-lg">
-<span class="inline-block text-xs font-extrabold tracking-widest uppercase text-emerald-700 bg-emerald-50 border border-emerald-200/70 px-3 py-1 rounded-full vp-trust-pill">Built To Fit More</span>
+<span class="inline-block text-xs font-extrabold tracking-widest uppercase text-red-700 bg-red-50 border border-red-200/70 px-3 py-1 rounded-full vp-trust-pill">Built To Fit More</span>
 <h2 class="text-2xl sm:text-4xl font-extrabold text-slate-950 leading-tight">Pack a full week into one personal item.</h2>
 <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
                         Load your hoodies, jeans, and outfits into the sealed inner chamber. Click on the pocket USB-C pump and watch bulky clothes flatten by over half in 15 seconds.
                     </p>
 <ul class="space-y-2.5 pt-2 text-sm text-slate-800 font-semibold">
-<li class="flex items-start gap-2.5"><span class="text-emerald-600 font-extrabold vp-check-accent">✓</span><span>Rechargeable USB-C turbo pump included in the box</span></li>
-<li class="flex items-start gap-2.5"><span class="text-emerald-600 font-extrabold vp-check-accent">✓</span><span>Slides cleanly under Spirit, Frontier, and Delta seats</span></li>
-<li class="flex items-start gap-2.5"><span class="text-emerald-600 font-extrabold vp-check-accent">✓</span><span>Skip $65 carry on gate fees every time you fly</span></li>
+<li class="flex items-start gap-2.5"><span class="text-red-600 font-extrabold vp-check-accent">✓</span><span>Rechargeable USB-C turbo pump included in the box</span></li>
+<li class="flex items-start gap-2.5"><span class="text-red-600 font-extrabold vp-check-accent">✓</span><span>Slides cleanly under Spirit, Frontier, and Delta seats</span></li>
+<li class="flex items-start gap-2.5"><span class="text-red-600 font-extrabold vp-check-accent">✓</span><span>Skip $65 carry on gate fees every time you fly</span></li>
 </ul>
 </div>
 </div>
@@ -407,9 +404,9 @@
                         Your clothes stay vacuum sealed in the main compartment while your laptop, chargers, and toiletries stay easy to grab up front. Made with tough water resistant fabric built for daily travel.
                     </p>
 <ul class="space-y-2.5 pt-2 text-sm text-slate-800 font-semibold">
-<li class="flex items-start gap-2.5"><span class="text-emerald-600 font-extrabold vp-check-accent">✓</span><span>Padded sleeve protects laptops up to 17 inches</span></li>
-<li class="flex items-start gap-2.5"><span class="text-emerald-600 font-extrabold vp-check-accent">✓</span><span>Separate wet and dry pocket keeps liquids away from clothes</span></li>
-<li class="flex items-start gap-2.5"><span class="text-emerald-600 font-extrabold vp-check-accent">✓</span><span>Scratch and water resistant shell with reinforced straps</span></li>
+<li class="flex items-start gap-2.5"><span class="text-red-600 font-extrabold vp-check-accent">✓</span><span>Padded sleeve protects laptops up to 17 inches</span></li>
+<li class="flex items-start gap-2.5"><span class="text-red-600 font-extrabold vp-check-accent">✓</span><span>Separate wet and dry pocket keeps liquids away from clothes</span></li>
+<li class="flex items-start gap-2.5"><span class="text-red-600 font-extrabold vp-check-accent">✓</span><span>Scratch and water resistant shell with reinforced straps</span></li>
 </ul>
 </div>
 <div class="relative rounded-3xl overflow-hidden bg-slate-100 border border-slate-200/80 shadow-md order-1 md:order-2">
@@ -427,7 +424,7 @@
 </div>
 </div>
 <div class="lg:col-span-6 space-y-6">
-<div class="inline-block bg-emerald-100 text-emerald-800 text-xs font-extrabold uppercase tracking-wider px-3 py-1 rounded-full">
+<div class="inline-block bg-red-100 text-red-700 text-xs font-extrabold uppercase tracking-wider px-3 py-1 rounded-full">
                         Better Than Packing Cubes
                     </div>
 <h2 class="text-2xl sm:text-4xl font-extrabold text-slate-950 leading-tight">
@@ -449,7 +446,7 @@
 </div>
 </div>
 <div class="flex gap-4">
-<div class="w-8 h-8 rounded-full bg-emerald-600 text-white font-extrabold text-sm flex items-center justify-center shrink-0">3</div>
+<div class="w-8 h-8 rounded-full bg-red-600 text-white font-extrabold text-sm flex items-center justify-center shrink-0">3</div>
 <div>
 <h3 class="font-bold text-slate-950">Tap The Pump And Shrink It 50%</h3>
 <p class="text-sm text-slate-600">Attach the pump. In 15 seconds, it shrinks to personal item size.</p>
@@ -457,7 +454,7 @@
 </div>
 </div>
 <div class="pt-2">
-<button class="bg-slate-950 hover:bg-emerald-600 text-white font-extrabold text-sm px-6 py-3.5 rounded-xl transition cursor-pointer" onclick="addSelectedBundleToCart()">
+<button class="bg-slate-950 hover:bg-red-600 text-white font-extrabold text-sm px-6 py-3.5 rounded-xl transition cursor-pointer" onclick="addSelectedBundleToCart()">
                             Get VakuPack Pro
                         </button>
 </div>
@@ -467,28 +464,28 @@
 <section class="mt-20 bg-slate-950 text-white rounded-3xl p-8 sm:p-10">
 <div class="grid md:grid-cols-12 gap-8 items-center">
 <div class="md:col-span-5">
-<div class="text-xs font-extrabold uppercase tracking-wider text-emerald-400 mb-2">Fits Under Any Airline Seat</div>
+<div class="text-xs font-extrabold uppercase tracking-wider text-red-600 mb-2">Fits Under Any Airline Seat</div>
 <h3 class="text-2xl sm:text-3xl font-extrabold mb-2">18" × 14" × 8" Approved</h3>
 <p class="text-sm text-slate-300 leading-relaxed">Fits airline sizer bins so you skip gate check fees.</p>
 </div>
 <div class="md:col-span-7 grid grid-cols-2 sm:grid-cols-3 gap-3 text-xs font-bold">
 <div class="bg-slate-900 border border-slate-800 rounded-2xl p-3.5 flex items-center justify-between">
-<span>Spirit Airlines</span><span class="text-emerald-400">✓ 18×14×8"</span>
+<span>Spirit Airlines</span><span class="text-red-600">✓ 18×14×8"</span>
 </div>
 <div class="bg-slate-900 border border-slate-800 rounded-2xl p-3.5 flex items-center justify-between">
-<span>Frontier Airlines</span><span class="text-emerald-400">✓ 18×14×8"</span>
+<span>Frontier Airlines</span><span class="text-red-600">✓ 18×14×8"</span>
 </div>
 <div class="bg-slate-900 border border-slate-800 rounded-2xl p-3.5 flex items-center justify-between">
-<span>Delta Basic</span><span class="text-emerald-400">✓ Fits Easy</span>
+<span>Delta Basic</span><span class="text-red-600">✓ Fits Easy</span>
 </div>
 <div class="bg-slate-900 border border-slate-800 rounded-2xl p-3.5 flex items-center justify-between">
-<span>United Basic</span><span class="text-emerald-400">✓ 17×10×9"</span>
+<span>United Basic</span><span class="text-red-600">✓ 17×10×9"</span>
 </div>
 <div class="bg-slate-900 border border-slate-800 rounded-2xl p-3.5 flex items-center justify-between">
-<span>American Airlines</span><span class="text-emerald-400">✓ 18×14×8"</span>
+<span>American Airlines</span><span class="text-red-600">✓ 18×14×8"</span>
 </div>
 <div class="bg-slate-900 border border-slate-800 rounded-2xl p-3.5 flex items-center justify-between">
-<span>Southwest / JetBlue</span><span class="text-emerald-400">✓ Fits Easy</span>
+<span>Southwest / JetBlue</span><span class="text-red-600">✓ Fits Easy</span>
 </div>
 </div>
 </div>
@@ -504,7 +501,7 @@
 <thead>
 <tr class="bg-slate-950 text-white">
 <th class="p-4 font-bold">Feature</th>
-<th class="p-4 font-extrabold text-emerald-400 bg-slate-900">VakuPack Pro</th>
+<th class="p-4 font-extrabold text-red-600 bg-slate-900">VakuPack Pro</th>
 <th class="p-4 font-semibold text-slate-300">Name Brand Vacuum Bags</th>
 <th class="p-4 font-semibold text-slate-300">Rolling Carry On</th>
 </tr>
@@ -512,25 +509,25 @@
 <tbody class="divide-y divide-slate-200 bg-white">
 <tr>
 <td class="p-4 font-semibold">Price</td>
-<td class="p-4 font-extrabold text-emerald-600 bg-emerald-50/30">$109.99 (or 2 for $194.99)</td>
+<td class="p-4 font-extrabold text-red-600 bg-red-50/30">$109.99 (or 2 for $194.99)</td>
 <td class="p-4 text-slate-600">$179 – $239+</td>
 <td class="p-4 text-slate-600">$274.99 – $300</td>
 </tr>
 <tr>
 <td class="p-4 font-semibold">USB-C Electric Pump</td>
-<td class="p-4 font-extrabold text-emerald-600 bg-emerald-50/30">✓ Included Free</td>
+<td class="p-4 font-extrabold text-red-600 bg-red-50/30">✓ Included Free</td>
 <td class="p-4 text-rose-600 font-semibold">$50 to $79 Extra</td>
 <td class="p-4 text-slate-400">✕ None</td>
 </tr>
 <tr>
 <td class="p-4 font-semibold">Airline Gate Fee</td>
-<td class="p-4 font-extrabold text-emerald-600 bg-emerald-50/30">$0 Personal Item</td>
+<td class="p-4 font-extrabold text-red-600 bg-red-50/30">$0 Personal Item</td>
 <td class="p-4 text-slate-600">$0</td>
 <td class="p-4 text-rose-600 font-semibold">$65 to $99 per flight</td>
 </tr>
 <tr>
 <td class="p-4 font-semibold">Wet Pocket &amp; RFID Protection</td>
-<td class="p-4 font-extrabold text-emerald-600 bg-emerald-50/30">✓ Both Built In</td>
+<td class="p-4 font-extrabold text-red-600 bg-red-50/30">✓ Both Built In</td>
 <td class="p-4 text-slate-600">Partial</td>
 <td class="p-4 text-slate-400">✕ No wet pocket</td>
 </tr>
@@ -544,7 +541,7 @@
 <div class="bg-slate-50 rounded-3xl p-6 sm:p-8 border border-slate-200/90 shadow-xs">
 <div class="grid md:grid-cols-12 gap-6 items-center pb-6 border-b border-slate-200">
 <div class="md:col-span-4 text-center md:text-left md:border-r md:border-slate-200 md:pr-6">
-<div class="text-xs font-extrabold uppercase tracking-wider text-emerald-600 mb-1">Verified Flyer Rating</div>
+<div class="text-xs font-extrabold uppercase tracking-wider text-red-600 mb-1">Verified Flyer Rating</div>
 <div class="flex items-baseline justify-center md:justify-start gap-2">
 <span class="text-5xl font-extrabold text-slate-950">4.9</span>
 <span class="text-sm font-semibold text-slate-500">/ 5.0</span>
@@ -554,16 +551,16 @@
 </div>
 <div class="md:col-span-8 space-y-2 text-xs">
 <button class="w-full flex items-center gap-3 group hover:opacity-90" onclick="filterReviews('5')">
-<span class="w-10 font-bold text-slate-800 text-left group-hover:text-emerald-600 vp-stars">5 ★</span>
+<span class="w-10 font-bold text-slate-800 text-left group-hover:text-red-600 vp-stars">5 ★</span>
 <div class="flex-1 h-2.5 bg-slate-200 rounded-full overflow-hidden">
-<div class="h-full bg-emerald-500 rounded-full" style="width: 91%"></div>
+<div class="h-full bg-red-600 rounded-full" style="width: 91%"></div>
 </div>
 <span class="w-12 text-right font-bold text-slate-700">3,895</span>
 </button>
 <button class="w-full flex items-center gap-3 group hover:opacity-90" onclick="filterReviews('4')">
-<span class="w-10 font-bold text-slate-800 text-left group-hover:text-emerald-600 vp-stars">4 ★</span>
+<span class="w-10 font-bold text-slate-800 text-left group-hover:text-red-600 vp-stars">4 ★</span>
 <div class="flex-1 h-2.5 bg-slate-200 rounded-full overflow-hidden">
-<div class="h-full bg-emerald-400 rounded-full" style="width: 9%"></div>
+<div class="h-full bg-red-600 rounded-full" style="width: 9%"></div>
 </div>
 <span class="w-12 text-right font-bold text-slate-700">385</span>
 </button>
@@ -606,8 +603,8 @@
 <div class="pointer-events-none absolute bottom-0 inset-x-0 h-12 bg-gradient-to-t from-slate-50 to-transparent rounded-b-2xl" id="reviews-fade"></div>
 </div>
 <div class="flex justify-center mt-3">
-<button aria-label="Expand reviews" class="group flex items-center justify-center w-10 h-10 rounded-full bg-white border border-slate-300 shadow-sm hover:border-emerald-500 hover:bg-emerald-50 transition" id="reviews-expand-btn" onclick="toggleReviewsExpand()">
-<svg class="w-5 h-5 text-slate-700 group-hover:text-emerald-600 transition-transform duration-300" fill="none" id="reviews-arrow-icon" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24">
+<button aria-label="Expand reviews" class="group flex items-center justify-center w-10 h-10 rounded-full bg-white border border-slate-300 shadow-sm hover:border-red-600 hover:bg-red-50 transition" id="reviews-expand-btn" onclick="toggleReviewsExpand()">
+<svg class="w-5 h-5 text-slate-700 group-hover:text-red-600 transition-transform duration-300" fill="none" id="reviews-arrow-icon" stroke="currentColor" stroke-width="2.5" viewbox="0 0 24 24">
 <path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round"></path>
 </svg>
 </button>
@@ -623,11 +620,11 @@
 <div class="page-view hidden" id="page-about">
 <main class="max-w-5xl mx-auto px-5 pt-12 pb-24">
 <div class="text-center max-w-3xl mx-auto mb-14">
-<div class="inline-block bg-emerald-100 text-emerald-800 text-xs font-extrabold uppercase tracking-wider px-3.5 py-1 rounded-full mb-4">
+<div class="inline-block bg-red-100 text-red-700 text-xs font-extrabold uppercase tracking-wider px-3.5 py-1 rounded-full mb-4">
                     Our Mission
                 </div>
 <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-slate-950 leading-tight mb-5">
-                    Built to Stop the <span class="text-emerald-600">$75 Gate Check Fee.</span>
+                    Built to Stop the <span class="text-red-600">$75 Gate Check Fee.</span>
 </h1>
 <p class="text-slate-600 text-base sm:text-lg leading-relaxed">
                     We built VakuPack so flyers never pay $80 carry on fees or cram clothes into tiny backpacks.
@@ -636,7 +633,7 @@
 <!-- Impact Stats Bar -->
 <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16">
 <div class="bg-slate-950 text-white rounded-3xl p-6 text-center">
-<div class="text-3xl sm:text-4xl font-extrabold text-emerald-400">4,280+</div>
+<div class="text-3xl sm:text-4xl font-extrabold text-red-600">4,280+</div>
 <div class="text-xs font-semibold text-slate-300 mt-1">Flyers Equipped</div>
 </div>
 <div class="bg-slate-50 border border-slate-200 rounded-3xl p-6 text-center">
@@ -668,7 +665,7 @@
                         Tested to hold pressure for 168 hours and fit airline 18" × 14" × 8" personal item sizers.
                     </p>
 <div class="pt-3 flex flex-wrap gap-3">
-<button class="bg-emerald-600 hover:bg-emerald-500 text-white font-extrabold text-sm px-6 py-3.5 rounded-xl shadow-md transition cursor-pointer" onclick="jumpToSection('offer-box')">
+<button class="bg-red-600 hover:bg-red-600 text-white font-extrabold text-sm px-6 py-3.5 rounded-xl shadow-md transition cursor-pointer" onclick="jumpToSection('offer-box')">
                             Shop VakuPack Pro
                         </button>
 <button class="bg-white hover:bg-slate-100 text-slate-950 border border-slate-300 font-bold text-sm px-6 py-3.5 rounded-xl transition cursor-pointer" onclick="switchPage('contact')">
@@ -703,7 +700,7 @@
 <div class="page-view hidden" id="page-contact">
 <main class="max-w-5xl mx-auto px-5 pt-12 pb-24">
 <div class="text-center max-w-2xl mx-auto mb-12">
-<div class="inline-block bg-emerald-100 text-emerald-800 text-xs font-extrabold uppercase tracking-wider px-3.5 py-1 rounded-full mb-4">
+<div class="inline-block bg-red-100 text-red-700 text-xs font-extrabold uppercase tracking-wider px-3.5 py-1 rounded-full mb-4">
                     24/7 Flyer Support
                 </div>
 <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-slate-950 mb-4">
@@ -718,11 +715,11 @@
 <div class="lg:col-span-5 space-y-5">
 <div class="p-6 rounded-3xl bg-slate-50 border border-slate-200/80 space-y-4">
 <div class="flex items-start gap-3.5">
-<div class="w-10 h-10 rounded-2xl bg-emerald-600 text-white flex items-center justify-center font-bold shrink-0">✉️</div>
+<div class="w-10 h-10 rounded-2xl bg-red-600 text-white flex items-center justify-center font-bold shrink-0">✉️</div>
 <div>
 <div class="font-extrabold text-slate-950 text-sm">Email Support</div>
 <div class="text-xs text-slate-500 mt-0.5">Replies in under 4 hours</div>
-<a class="inline-block text-sm font-bold text-emerald-600 hover:underline mt-1" href="mailto:support@vakupack.com">support@vakupack.com</a>
+<a class="inline-block text-sm font-bold text-red-600 hover:underline mt-1" href="mailto:support@vakupack.com">support@vakupack.com</a>
 </div>
 </div>
 <div class="border-t border-slate-200 pt-4 flex items-start gap-3.5">
@@ -742,15 +739,15 @@
 </div>
 <!-- Quick Order Status Lookup Box -->
 <div class="p-6 rounded-3xl bg-slate-950 text-white">
-<div class="text-xs font-extrabold uppercase tracking-wider text-emerald-400 mb-1.5">Track Your Order</div>
+<div class="text-xs font-extrabold uppercase tracking-wider text-red-600 mb-1.5">Track Your Order</div>
 <p class="text-xs text-slate-300 mb-3">Enter your order number or email to check shipping status:</p>
 <div class="flex gap-2">
-<input class="flex-1 bg-slate-900 border border-slate-700 rounded-xl px-3.5 py-2.5 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-emerald-500" id="track-input" placeholder="e.g. #VP-1048 or email" type="text"/>
-<button class="bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-extrabold text-xs px-4 py-2.5 rounded-xl transition cursor-pointer" onclick="checkOrderLookup()">
+<input class="flex-1 bg-slate-900 border border-slate-700 rounded-xl px-3.5 py-2.5 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-red-600" id="track-input" placeholder="e.g. #VP-1048 or email" type="text"/>
+<button class="bg-red-600 hover:bg-red-600 text-slate-950 font-extrabold text-xs px-4 py-2.5 rounded-xl transition cursor-pointer" onclick="checkOrderLookup()">
                                 Track
                             </button>
 </div>
-<p class="hidden text-xs text-emerald-300 mt-3 bg-slate-900/90 p-3 rounded-xl border border-slate-800" id="track-result"></p>
+<p class="hidden text-xs text-red-200 mt-3 bg-slate-900/90 p-3 rounded-xl border border-slate-800" id="track-result"></p>
 </div>
 </div>
 <!-- Right Interactive Contact Form -->
@@ -759,17 +756,17 @@
 <div class="grid sm:grid-cols-2 gap-4">
 <div>
 <label class="block text-xs font-extrabold text-slate-700 uppercase tracking-wider mb-1.5">Full Name *</label>
-<input class="w-full rounded-xl border border-slate-300 px-4 py-3 text-sm focus:outline-none focus:border-emerald-500" id="cf-name" placeholder="Alex Rivera" required="" type="text"/>
+<input class="w-full rounded-xl border border-slate-300 px-4 py-3 text-sm focus:outline-none focus:border-red-600" id="cf-name" placeholder="Alex Rivera" required="" type="text"/>
 </div>
 <div>
 <label class="block text-xs font-extrabold text-slate-700 uppercase tracking-wider mb-1.5">Email Address *</label>
-<input class="w-full rounded-xl border border-slate-300 px-4 py-3 text-sm focus:outline-none focus:border-emerald-500" id="cf-email" placeholder="alex@example.com" required="" type="email"/>
+<input class="w-full rounded-xl border border-slate-300 px-4 py-3 text-sm focus:outline-none focus:border-red-600" id="cf-email" placeholder="alex@example.com" required="" type="email"/>
 </div>
 </div>
 <div class="grid sm:grid-cols-2 gap-4">
 <div>
 <label class="block text-xs font-extrabold text-slate-700 uppercase tracking-wider mb-1.5">Topic</label>
-<select class="w-full rounded-xl border border-slate-300 px-4 py-3 text-sm bg-white focus:outline-none focus:border-emerald-500" id="cf-topic">
+<select class="w-full rounded-xl border border-slate-300 px-4 py-3 text-sm bg-white focus:outline-none focus:border-red-600" id="cf-topic">
 <option>Airline Size &amp; Product Question</option>
 <option>Order Status &amp; Tracking</option>
 <option>BOGO 2-Pack Bundle Question</option>
@@ -778,29 +775,29 @@
 </div>
 <div>
 <label class="block text-xs font-extrabold text-slate-700 uppercase tracking-wider mb-1.5">Order Number (Optional)</label>
-<input class="w-full rounded-xl border border-slate-300 px-4 py-3 text-sm focus:outline-none focus:border-emerald-500" id="cf-order" placeholder="#VP-XXXX" type="text"/>
+<input class="w-full rounded-xl border border-slate-300 px-4 py-3 text-sm focus:outline-none focus:border-red-600" id="cf-order" placeholder="#VP-XXXX" type="text"/>
 </div>
 </div>
 <div>
 <label class="block text-xs font-extrabold text-slate-700 uppercase tracking-wider mb-1.5">How Can We Help? *</label>
-<textarea class="w-full rounded-xl border border-slate-300 px-4 py-3 text-sm focus:outline-none focus:border-emerald-500" id="cf-msg" placeholder="Tell us your question or airline details and we'll get right back to you..." required="" rows="4"></textarea>
+<textarea class="w-full rounded-xl border border-slate-300 px-4 py-3 text-sm focus:outline-none focus:border-red-600" id="cf-msg" placeholder="Tell us your question or airline details and we'll get right back to you..." required="" rows="4"></textarea>
 </div>
-<button class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-extrabold text-base py-4 rounded-2xl shadow-lg shadow-emerald-600/20 transition cursor-pointer" type="submit">
+<button class="w-full bg-red-600 hover:bg-red-600 text-white font-extrabold text-base py-4 rounded-2xl shadow-lg shadow-red-600/20 transition cursor-pointer" type="submit">
                             Send Message
                         </button>
 </form>
 <!-- Confirmation State -->
 <div class="hidden text-center py-8 space-y-4" id="contact-success">
-<div class="w-14 h-14 rounded-full bg-emerald-100 text-emerald-600 text-2xl font-extrabold flex items-center justify-center mx-auto">✓</div>
+<div class="w-14 h-14 rounded-full bg-red-100 text-red-600 text-2xl font-extrabold flex items-center justify-center mx-auto vp-check-accent">✓</div>
 <h3 class="text-2xl font-extrabold text-slate-950">Message Received</h3>
 <p class="text-sm text-slate-600 max-w-md mx-auto">
-                            Thanks <span class="font-bold text-slate-950" id="cf-confirm-name"></span>! Your support ticket <span class="font-mono font-bold text-emerald-600" id="cf-ticket-id"></span> is logged. We will reply to <span class="font-bold text-slate-950" id="cf-confirm-email"></span> within 4 hours.
+                            Thanks <span class="font-bold text-slate-950" id="cf-confirm-name"></span>! Your support ticket <span class="font-mono font-bold text-red-600" id="cf-ticket-id"></span> is logged. We will reply to <span class="font-bold text-slate-950" id="cf-confirm-email"></span> within 4 hours.
                         </p>
 <div class="pt-2 flex justify-center gap-3">
 <button class="px-5 py-2.5 rounded-xl border border-slate-300 text-xs font-bold text-slate-700 hover:bg-slate-50 cursor-pointer" onclick="resetContactForm()">
                                 Send Another Message
                             </button>
-<button class="px-5 py-2.5 rounded-xl bg-slate-950 text-white text-xs font-bold hover:bg-emerald-600 cursor-pointer" onclick="switchPage('home')">
+<button class="px-5 py-2.5 rounded-xl bg-slate-950 text-white text-xs font-bold hover:bg-red-600 cursor-pointer" onclick="switchPage('home')">
                                 Back to Shop
                             </button>
 </div>
@@ -814,7 +811,7 @@
 <div class="max-w-6xl mx-auto px-5 py-12 grid sm:grid-cols-2 md:grid-cols-4 gap-8 text-xs">
 <div class="space-y-3">
 <div class="text-xl font-extrabold text-white flex items-center gap-1.5">
-<span class="w-2.5 h-2.5 rounded-full bg-emerald-500 inline-block"></span>VakuPack™
+<span class="w-2.5 h-2.5 rounded-full bg-red-600 inline-block"></span>VakuPack™
                 </div>
 <p class="leading-relaxed">Vacuum compression travel bags built to skip baggage fees.</p>
 </div>
@@ -834,9 +831,9 @@
 <div class="font-extrabold text-white uppercase tracking-wider">Guarantees and Policies</div>
 <p class="leading-relaxed">30 Day Sizer Guarantee • 24 Hour Dispatch • Secure SSL Checkout</p>
 <div class="pt-1 flex flex-wrap gap-3 text-slate-300 font-semibold">
-<button class="hover:text-emerald-400 underline cursor-pointer" onclick="openLegalModal('refund')">Refund Policy</button>
-<button class="hover:text-emerald-400 underline cursor-pointer" onclick="openLegalModal('privacy')">Privacy Policy</button>
-<button class="hover:text-emerald-400 underline cursor-pointer" onclick="openLegalModal('terms')">Terms of Service</button>
+<button class="hover:text-red-600 underline cursor-pointer" onclick="openLegalModal('refund')">Refund Policy</button>
+<button class="hover:text-red-600 underline cursor-pointer" onclick="openLegalModal('privacy')">Privacy Policy</button>
+<button class="hover:text-red-600 underline cursor-pointer" onclick="openLegalModal('terms')">Terms of Service</button>
 </div>
 </div>
 </div>
@@ -844,12 +841,12 @@
 <!-- ========================================================= -->
 <!-- STICKY CORNER SHOPPING CART BUTTON (FLOATING BOTTOM-RIGHT) -->
 <!-- ========================================================= -->
-<button aria-label="Open shopping cart" class="fixed bottom-20 md:bottom-6 right-5 z-40 flex items-center gap-2.5 bg-slate-950 hover:bg-emerald-600 text-white px-4 py-3.5 rounded-full shadow-2xl border border-slate-700/80 transition-all duration-200 cursor-pointer" id="sticky-cart-btn" onclick="toggleCart(true)">
+<button aria-label="Open shopping cart" class="fixed bottom-20 md:bottom-6 right-5 z-40 flex items-center gap-2.5 bg-slate-950 hover:bg-red-600 text-white px-4 py-3.5 rounded-full shadow-2xl border border-slate-700/80 transition-all duration-200 cursor-pointer" id="sticky-cart-btn" onclick="toggleCart(true)">
 <div class="relative">
-<svg class="w-6 h-6 text-emerald-400" fill="none" stroke="currentColor" stroke-width="2.2" viewbox="0 0 24 24">
+<svg class="w-6 h-6 text-red-600" fill="none" stroke="currentColor" stroke-width="2.2" viewbox="0 0 24 24">
 <path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" stroke-linecap="round" stroke-linejoin="round"></path>
 </svg>
-<span class="absolute -top-2 -right-2.5 min-w-[20px] h-5 px-1 rounded-full bg-emerald-500 text-slate-950 text-[11px] font-extrabold flex items-center justify-center shadow-xs" id="sticky-cart-count">
+<span class="absolute -top-2 -right-2.5 min-w-[20px] h-5 px-1 rounded-full bg-red-600 text-slate-950 text-[11px] font-extrabold flex items-center justify-center shadow-xs" id="sticky-cart-count">
                 0
             </span>
 </div>
@@ -865,14 +862,14 @@
 <div class="px-6 py-4 border-b border-slate-200 flex items-center justify-between">
 <div class="flex items-center gap-2">
 <span class="font-extrabold text-lg text-slate-950">Your Cart</span>
-<span class="bg-emerald-100 text-emerald-800 text-xs font-extrabold px-2.5 py-0.5 rounded-full" id="drawer-count-pill">0 items</span>
+<span class="bg-red-100 text-red-700 text-xs font-extrabold px-2.5 py-0.5 rounded-full" id="drawer-count-pill">0 items</span>
 </div>
 <button aria-label="Close cart" class="w-8 h-8 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-700 font-extrabold text-sm flex items-center justify-center cursor-pointer" onclick="toggleCart(false)">
                         ✕
                     </button>
 </div>
 <!-- Free Shipping Banner -->
-<div class="bg-emerald-50 border-b border-emerald-100 px-6 py-2.5 text-xs font-bold text-emerald-800 flex items-center justify-between">
+<div class="bg-red-50 border-b border-red-100 px-6 py-2.5 text-xs font-bold text-red-700 flex items-center justify-between">
 <span>🚚 Free Express Shipping Unlocked</span>
 <span class="vp-check-accent">✓</span>
 </div>
@@ -885,9 +882,9 @@
 <div class="p-6 border-t border-slate-200 bg-slate-50 space-y-3" id="cart-drawer-footer">
 <div class="flex justify-between text-xs font-semibold text-slate-500">
 <span>Tracked Express Shipping</span>
-<span class="text-emerald-600 font-extrabold">FREE</span>
+<span class="text-red-600 font-extrabold">FREE</span>
 </div>
-<div class="flex justify-between text-xs font-semibold text-emerald-700">
+<div class="flex justify-between text-xs font-semibold text-red-700">
 <span>Bundle Savings</span>
 <span id="cart-savings">$0.00</span>
 </div>
@@ -895,7 +892,7 @@
 <span class="font-extrabold text-base text-slate-950">Total</span>
 <span class="font-extrabold text-2xl text-slate-950" id="cart-subtotal">$0.00</span>
 </div>
-<a class="w-full flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white font-extrabold text-base py-4 rounded-2xl shadow-lg shadow-emerald-600/20 transition vp-cta-primary" href="https://buy.stripe.com/6oU14n6PH0XV8dN9Rc9sk04" id="cart-checkout-btn">
+<a class="w-full flex items-center justify-center gap-2 bg-red-600 hover:bg-red-600 text-white font-extrabold text-base py-4 rounded-2xl shadow-lg shadow-red-600/20 transition vp-cta-primary" href="https://buy.stripe.com/6oU14n6PH0XV8dN9Rc9sk04" id="cart-checkout-btn">
 <span>Check Out Now</span>
 <span>→</span>
 </a>
@@ -909,9 +906,9 @@
 <div class="fixed bottom-0 inset-x-0 bg-white/95 backdrop-blur border-t border-slate-200 p-3.5 md:hidden z-30 flex items-center justify-between gap-3">
 <div>
 <div class="text-xs font-extrabold text-slate-950" id="mobile-label">2x VakuPack Pro (BOGO)</div>
-<div class="text-sm font-extrabold text-emerald-600" id="mobile-price">$194.99 <span class="text-xs text-slate-400 line-through">$309.98</span></div>
+<div class="text-sm font-extrabold text-red-600" id="mobile-price">$194.99 <span class="text-xs text-slate-400 line-through">$309.98</span></div>
 </div>
-<button class="bg-emerald-600 text-white font-extrabold text-sm px-5 py-3 rounded-xl shadow-md vp-cta-primary" onclick="addSelectedBundleToCart()">
+<button class="bg-red-600 text-white font-extrabold text-sm px-5 py-3 rounded-xl shadow-md vp-cta-primary" onclick="addSelectedBundleToCart()">
             Add to Cart
         </button>
 </div>
@@ -961,10 +958,10 @@
 
             document.querySelectorAll('.nav-link').forEach(btn => {
                 if (btn.dataset.nav === pageName) {
-                    btn.classList.add('text-slate-950', 'border-emerald-500');
+                    btn.classList.add('text-slate-950', 'border-red-600');
                     btn.classList.remove('border-transparent');
                 } else {
-                    btn.classList.remove('text-slate-950', 'border-emerald-500');
+                    btn.classList.remove('text-slate-950', 'border-red-600');
                     btn.classList.add('border-transparent');
                 }
             });
@@ -984,12 +981,12 @@
             const vid = document.getElementById('stage-video');
             const img = document.getElementById('stage-img');
             document.querySelectorAll('.stage-thumb').forEach(el => {
-                el.classList.remove('border-emerald-500');
+                el.classList.remove('border-red-600');
                 el.classList.add('border-slate-200');
             });
             if (btn) {
                 btn.classList.remove('border-slate-200');
-                btn.classList.add('border-emerald-500');
+                btn.classList.add('border-red-600');
             }
             if (type === 'video' && vid) {
                 vid.classList.remove('hidden');
@@ -1011,7 +1008,7 @@
 
             if (type === 'single') {
                 document.getElementById('radio-single').checked = true;
-                cardSingle.className = "block cursor-pointer rounded-2xl border-2 border-emerald-500 bg-emerald-50/40 p-4 transition shadow-sm";
+                cardSingle.className = "block cursor-pointer rounded-2xl border-2 border-red-600 bg-red-50/40 p-4 transition shadow-sm";
                 cardBogo.className = "block cursor-pointer rounded-2xl border-2 border-slate-200 p-4 relative transition hover:border-slate-400";
                 mainCta.href = SINGLE_URL;
                 mainCta.innerHTML = '<span>BUY NOW — $109.99</span><span>→</span>';
@@ -1019,7 +1016,7 @@
                 mobilePrice.innerHTML = '$109.99 <span class="text-xs text-slate-400 line-through">$119.99</span>';
             } else {
                 document.getElementById('radio-bogo').checked = true;
-                cardBogo.className = "block cursor-pointer rounded-2xl border-2 border-emerald-500 bg-emerald-50/40 p-4 relative transition shadow-sm";
+                cardBogo.className = "block cursor-pointer rounded-2xl border-2 border-red-600 bg-red-50/40 p-4 relative transition shadow-sm";
                 cardSingle.className = "block cursor-pointer rounded-2xl border-2 border-slate-200 p-4 transition hover:border-slate-400";
                 mainCta.href = BOGO_URL;
                 mainCta.innerHTML = '<span>BUY NOW — $194.99</span><span>→</span>';
@@ -1098,12 +1095,12 @@
                         <div class="font-extrabold text-lg text-slate-950">Your Travel Bag is Empty</div>
                         <p class="text-xs text-slate-500 max-w-xs mx-auto">Add a VakuPack™ Pro bundle below to unlock free USB-C vacuum pumps and free express shipping.</p>
                         <div class="space-y-2.5 pt-2 text-left">
-                            <button onclick="addBundleDirectly('bogo')" class="w-full p-3.5 rounded-2xl border-2 border-emerald-500 bg-emerald-50/50 hover:bg-emerald-50 flex items-center justify-between transition cursor-pointer">
+                            <button onclick="addBundleDirectly('bogo')" class="w-full p-3.5 rounded-2xl border-2 border-red-600 bg-red-50/50 hover:bg-red-50 flex items-center justify-between transition cursor-pointer">
                                 <div>
-                                    <div class="text-xs font-extrabold text-emerald-700 uppercase">Most Popular • BOGO</div>
+                                    <div class="text-xs font-extrabold text-red-700 uppercase">Most Popular • BOGO</div>
                                     <div class="text-sm font-extrabold text-slate-950">2× VakuPack™ Pros + Pumps</div>
                                 </div>
-                                <span class="bg-emerald-600 text-white text-xs font-extrabold px-3 py-1.5 rounded-xl">+ Add $${CATALOG.bogo.price.toFixed(2)}</span>
+                                <span class="bg-red-600 text-white text-xs font-extrabold px-3 py-1.5 rounded-xl">+ Add $${CATALOG.bogo.price.toFixed(2)}</span>
                             </button>
                             <button onclick="addBundleDirectly('single')" class="w-full p-3.5 rounded-2xl border border-slate-200 hover:border-slate-400 flex items-center justify-between transition cursor-pointer">
                                 <div>
@@ -1142,12 +1139,12 @@
             // Smart 1-click BOGO upsell if user only added Single Pack
             if (cart.length === 1 && cart[0].id === 'single') {
                 itemsHtml += `
-                <div class="p-3.5 rounded-2xl bg-emerald-50 border border-emerald-200 flex items-center justify-between gap-3">
+                <div class="p-3.5 rounded-2xl bg-red-50 border border-red-200 flex items-center justify-between gap-3">
                     <div>
-                        <div class="text-xs font-extrabold text-emerald-900">Get a 2nd Bag for Just $25 More!</div>
-                        <div class="text-[11px] text-emerald-700">Upgrade to the BOGO 2-Pack & save $30.</div>
+                        <div class="text-xs font-extrabold text-red-800">Get a 2nd Bag for Just $25 More!</div>
+                        <div class="text-[11px] text-red-700">Upgrade to the BOGO 2-Pack & save $30.</div>
                     </div>
-                    <button onclick="upgradeSingleToBogo()" class="bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-extrabold px-3 py-2 rounded-xl shrink-0 cursor-pointer">
+                    <button onclick="upgradeSingleToBogo()" class="bg-red-600 hover:bg-red-600 text-white text-xs font-extrabold px-3 py-2 rounded-xl shrink-0 cursor-pointer">
                         Upgrade
                     </button>
                 </div>`;
@@ -1239,7 +1236,7 @@
                 const starsStr = '★'.repeat(r.stars) + '☆'.repeat(5 - r.stars);
                 const photosHtml = (r.photos && r.photos.length)
                     ? `<div class="flex gap-2 mt-3">` + r.photos.map(p =>
-                        `<button onclick="openReviewPhoto('${p}')" class="w-16 h-16 rounded-xl overflow-hidden border border-slate-200 bg-white hover:border-emerald-500 transition shrink-0">` +
+                        `<button onclick="openReviewPhoto('${p}')" class="w-16 h-16 rounded-xl overflow-hidden border border-slate-200 bg-white hover:border-red-600 transition shrink-0">` +
                         `<img src="${p}" alt="Buyer photo" class="w-full h-full object-cover" /></button>`
                       ).join('') + `</div>`
                     : '';
@@ -1250,7 +1247,7 @@
                         <div class="flex items-center gap-2">
                             <span class="text-amber-400 text-sm tracking-tight">${starsStr}</span>
                             <span class="text-xs font-extrabold text-slate-950">${r.name}</span>
-                            <span class="text-[10px] font-bold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded-full">✓ ${r.badge}</span>
+                            <span class="text-[10px] font-bold text-red-700 bg-red-50 px-2 py-0.5 rounded-full">✓ ${r.badge}</span>
                         </div>
                         <span class="text-[11px] text-slate-400">${r.date}</span>
                     </div>
