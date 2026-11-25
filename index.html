@@ -47,10 +47,97 @@
       }
     }
     </script>
+
+<style id="vakupack-conversion-theme">
+        :root {
+            --vp-bg: #FFFFFF;
+            --vp-surface: #F8FAFC;
+            --vp-navy: #0F172A;
+            --vp-navy-soft: #1E293B;
+            --vp-body: #334155;
+            --vp-muted: #64748B;
+            --vp-border: #E2E8F0;
+            --vp-cta: #16A34A;
+            --vp-cta-hover: #15803D;
+            --vp-cta-text: #FFFFFF;
+            --vp-cta-shadow: rgba(22, 163, 74, 0.30);
+            --vp-trust: #1D4ED8;
+            --vp-trust-bg: #EFF6FF;
+            --vp-gold: #F59E0B;
+            --vp-red: #DC2626;
+        }
+
+        /* 60% Crisp White & Soft Surface Base */
+        html, body {
+            background-color: var(--vp-bg) !important;
+            color: var(--vp-body) !important;
+        }
+
+        /* 30% Authority: Deep Navy Headings, Announcement Bars & Footer */
+        h1, h2, h3, h4 {
+            color: var(--vp-navy) !important;
+        }
+        .vp-dark-bar, footer {
+            background-color: var(--vp-navy) !important;
+            color: #F8FAFC !important;
+        }
+        footer h1, footer h2, footer h3, footer h4 {
+            color: #FFFFFF !important;
+        }
+        footer p, footer a, footer li, footer span {
+            color: #CBD5E1;
+        }
+        footer a:hover {
+            color: #FFFFFF !important;
+        }
+
+        /* 10% High-Contrast Action Buttons (Von Restorff Isolation Effect) */
+        .vp-cta-primary {
+            background-color: var(--vp-cta) !important;
+            background-image: none !important;
+            color: var(--vp-cta-text) !important;
+            border: 1px solid transparent !important;
+            box-shadow: 0 10px 24px -6px var(--vp-cta-shadow) !important;
+            font-weight: 800 !important;
+            letter-spacing: -0.01em !important;
+            transition: transform 0.16s ease, background-color 0.16s ease, box-shadow 0.16s ease !important;
+        }
+        .vp-cta-primary:hover {
+            background-color: var(--vp-cta-hover) !important;
+            transform: translateY(-1px) !important;
+            box-shadow: 0 14px 28px -6px var(--vp-cta-shadow) !important;
+        }
+        .vp-cta-primary:active {
+            transform: scale(0.985) !important;
+        }
+        .vp-cta-primary * {
+            color: var(--vp-cta-text) !important;
+        }
+
+        /* Micro-Accents: Warm Gold Review Stars & Tiny Red Save Pills */
+        .vp-stars {
+            color: var(--vp-gold) !important;
+        }
+        .vp-urgency-pill {
+            background-color: var(--vp-red) !important;
+            color: #FFFFFF !important;
+            border-color: var(--vp-red) !important;
+            font-weight: 800 !important;
+            letter-spacing: 0.02em !important;
+        }
+        .vp-trust-pill {
+            background-color: var(--vp-trust-bg) !important;
+            color: var(--vp-trust) !important;
+            border-color: rgba(29, 78, 216, 0.22) !important;
+        }
+        .vp-check-accent {
+            color: var(--vp-cta) !important;
+        }
+    </style>
 </head>
 <body class="bg-white text-slate-900 antialiased selection:bg-emerald-500 selection:text-white">
 <!-- Top Announcement Bar -->
-<div class="bg-slate-950 text-white text-center py-2.5 px-4 text-xs sm:text-sm font-semibold tracking-wide">
+<div class="bg-slate-950 text-white text-center py-2.5 px-4 text-xs sm:text-sm font-semibold tracking-wide vp-dark-bar">
 <span class="text-emerald-400 font-extrabold">Holiday sale:</span> Free $49 USB-C pump and fast shipping. Ends soon. <span class="font-mono text-emerald-400" id="timer">03:44:19</span>
 </div>
 <!-- Main Sticky Navigation Header (Home • About Us • Contact Us + Cart) -->
@@ -82,7 +169,7 @@
 </svg>
 <span class="absolute -top-1.5 -right-1.5 w-5 h-5 rounded-full bg-emerald-600 text-white text-[10px] font-extrabold flex items-center justify-center" id="header-cart-badge">0</span>
 </button>
-<button class="hidden sm:inline-block bg-slate-950 hover:bg-emerald-600 text-white text-xs sm:text-sm font-bold px-4 py-2 rounded-full transition shadow-sm" onclick="jumpToSection('offer-box')">
+<button class="hidden sm:inline-block bg-slate-950 hover:bg-emerald-600 text-white text-xs sm:text-sm font-bold px-4 py-2 rounded-full transition shadow-sm vp-cta-primary" onclick="jumpToSection('offer-box')">
                     Shop now
                 </button>
 </div>
@@ -135,7 +222,7 @@
 <!-- Right Column: Persuasive Copy, Bundle Selector & Add to Cart -->
 <div class="lg:col-span-6" id="offer-box">
 <div class="flex items-center gap-2 mb-3">
-<div class="flex text-amber-400 text-sm">★★★★★</div>
+<div class="flex text-amber-400 text-sm vp-stars">★★★★★</div>
 <span class="text-xs font-bold text-slate-700">4.9/5 rating (4,280+ flyers)</span>
 <span class="text-slate-300">•</span>
 <span class="text-xs font-semibold text-emerald-600">In stock. Ready to ship.</span>
@@ -149,16 +236,16 @@
 <!-- Benefit Bullets -->
 <div class="grid sm:grid-cols-2 gap-2.5 mb-6 text-xs sm:text-sm font-semibold text-slate-800">
 <div class="flex items-center gap-2 bg-slate-50 px-3 py-2 rounded-xl border border-slate-100">
-<span class="text-emerald-600 font-extrabold">✓</span> Free USB-C pump included
+<span class="text-emerald-600 font-extrabold vp-check-accent">✓</span> Free USB-C pump included
                         </div>
 <div class="flex items-center gap-2 bg-slate-50 px-3 py-2 rounded-xl border border-slate-100">
-<span class="text-emerald-600 font-extrabold">✓</span> Smell proof laundry pocket
+<span class="text-emerald-600 font-extrabold vp-check-accent">✓</span> Smell proof laundry pocket
                         </div>
 <div class="flex items-center gap-2 bg-slate-50 px-3 py-2 rounded-xl border border-slate-100">
-<span class="text-emerald-600 font-extrabold">✓</span> 180 degree 17.3" laptop sleeve
+<span class="text-emerald-600 font-extrabold vp-check-accent">✓</span> 180 degree 17.3" laptop sleeve
                         </div>
 <div class="flex items-center gap-2 bg-slate-50 px-3 py-2 rounded-xl border border-slate-100">
-<span class="text-emerald-600 font-extrabold">✓</span> Water resistant 900D shell
+<span class="text-emerald-600 font-extrabold vp-check-accent">✓</span> Water resistant 900D shell
                         </div>
 </div>
 <!-- Bundle Selector Cards -->
@@ -200,13 +287,13 @@
 </div>
 <!-- Dual Action Buttons: Add to Cart (Opens Pop-Out Cart) + Express Checkout -->
 <div class="grid sm:grid-cols-12 gap-3">
-<button class="sm:col-span-5 flex items-center justify-center gap-2 bg-slate-950 hover:bg-slate-800 text-white font-extrabold text-base py-4 px-5 rounded-2xl transition cursor-pointer" onclick="addSelectedBundleToCart()">
+<button class="sm:col-span-5 flex items-center justify-center gap-2 bg-slate-950 hover:bg-slate-800 text-white font-extrabold text-base py-4 px-5 rounded-2xl transition cursor-pointer vp-cta-primary" onclick="addSelectedBundleToCart()">
 <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.2" viewbox="0 0 24 24">
 <path d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" stroke-linecap="round" stroke-linejoin="round"></path>
 </svg>
 <span>Add to cart</span>
 </button>
-<a class="sm:col-span-7 flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white font-extrabold text-base sm:text-lg py-4 px-6 rounded-2xl shadow-lg shadow-emerald-600/20 transition transform active:scale-[0.99]" href="https://buy.stripe.com/6oU14n6PH0XV8dN9Rc9sk04" id="main-cta">
+<a class="sm:col-span-7 flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white font-extrabold text-base sm:text-lg py-4 px-6 rounded-2xl shadow-lg shadow-emerald-600/20 transition transform active:scale-[0.99] vp-cta-primary" href="https://buy.stripe.com/6oU14n6PH0XV8dN9Rc9sk04" id="main-cta">
 <span>Buy now for $194.99</span>
 <span>→</span>
 </a>
@@ -299,15 +386,15 @@
 <img alt="Vacuum compression travel backpack with pocket USB-C pump" class="w-full h-full aspect-[4/3] sm:aspect-square object-cover" loading="lazy" src="images/feature_split_1.png?v=1795563061"/>
 </div>
 <div class="space-y-4 max-w-lg">
-<span class="inline-block text-xs font-extrabold tracking-widest uppercase text-emerald-700 bg-emerald-50 border border-emerald-200/70 px-3 py-1 rounded-full">Built To Fit More</span>
+<span class="inline-block text-xs font-extrabold tracking-widest uppercase text-emerald-700 bg-emerald-50 border border-emerald-200/70 px-3 py-1 rounded-full vp-trust-pill">Built To Fit More</span>
 <h2 class="text-2xl sm:text-4xl font-extrabold text-slate-950 leading-tight">Pack a full week into one personal item.</h2>
 <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
                         Load your hoodies, jeans, and outfits into the sealed inner chamber. Click on the pocket USB-C pump and watch bulky clothes flatten by over half in 15 seconds.
                     </p>
 <ul class="space-y-2.5 pt-2 text-sm text-slate-800 font-semibold">
-<li class="flex items-start gap-2.5"><span class="text-emerald-600 font-extrabold">✓</span><span>Rechargeable USB-C turbo pump included in the box</span></li>
-<li class="flex items-start gap-2.5"><span class="text-emerald-600 font-extrabold">✓</span><span>Slides cleanly under Spirit, Frontier, and Delta seats</span></li>
-<li class="flex items-start gap-2.5"><span class="text-emerald-600 font-extrabold">✓</span><span>Skip $65 carry on gate fees every time you fly</span></li>
+<li class="flex items-start gap-2.5"><span class="text-emerald-600 font-extrabold vp-check-accent">✓</span><span>Rechargeable USB-C turbo pump included in the box</span></li>
+<li class="flex items-start gap-2.5"><span class="text-emerald-600 font-extrabold vp-check-accent">✓</span><span>Slides cleanly under Spirit, Frontier, and Delta seats</span></li>
+<li class="flex items-start gap-2.5"><span class="text-emerald-600 font-extrabold vp-check-accent">✓</span><span>Skip $65 carry on gate fees every time you fly</span></li>
 </ul>
 </div>
 </div>
@@ -320,9 +407,9 @@
                         Your clothes stay vacuum sealed in the main compartment while your laptop, chargers, and toiletries stay easy to grab up front. Made with tough water resistant fabric built for daily travel.
                     </p>
 <ul class="space-y-2.5 pt-2 text-sm text-slate-800 font-semibold">
-<li class="flex items-start gap-2.5"><span class="text-emerald-600 font-extrabold">✓</span><span>Padded sleeve protects laptops up to 17 inches</span></li>
-<li class="flex items-start gap-2.5"><span class="text-emerald-600 font-extrabold">✓</span><span>Separate wet and dry pocket keeps liquids away from clothes</span></li>
-<li class="flex items-start gap-2.5"><span class="text-emerald-600 font-extrabold">✓</span><span>Scratch and water resistant shell with reinforced straps</span></li>
+<li class="flex items-start gap-2.5"><span class="text-emerald-600 font-extrabold vp-check-accent">✓</span><span>Padded sleeve protects laptops up to 17 inches</span></li>
+<li class="flex items-start gap-2.5"><span class="text-emerald-600 font-extrabold vp-check-accent">✓</span><span>Separate wet and dry pocket keeps liquids away from clothes</span></li>
+<li class="flex items-start gap-2.5"><span class="text-emerald-600 font-extrabold vp-check-accent">✓</span><span>Scratch and water resistant shell with reinforced straps</span></li>
 </ul>
 </div>
 <div class="relative rounded-3xl overflow-hidden bg-slate-100 border border-slate-200/80 shadow-md order-1 md:order-2">
@@ -462,36 +549,36 @@
 <span class="text-5xl font-extrabold text-slate-950">4.9</span>
 <span class="text-sm font-semibold text-slate-500">/ 5.0</span>
 </div>
-<div class="text-amber-400 text-lg tracking-wider my-1">★★★★★</div>
+<div class="text-amber-400 text-lg tracking-wider my-1 vp-stars">★★★★★</div>
 <div class="text-xs font-semibold text-slate-600">Based on <span class="font-extrabold text-slate-950">4,280</span> reviews</div>
 </div>
 <div class="md:col-span-8 space-y-2 text-xs">
 <button class="w-full flex items-center gap-3 group hover:opacity-90" onclick="filterReviews('5')">
-<span class="w-10 font-bold text-slate-800 text-left group-hover:text-emerald-600">5 ★</span>
+<span class="w-10 font-bold text-slate-800 text-left group-hover:text-emerald-600 vp-stars">5 ★</span>
 <div class="flex-1 h-2.5 bg-slate-200 rounded-full overflow-hidden">
 <div class="h-full bg-emerald-500 rounded-full" style="width: 91%"></div>
 </div>
 <span class="w-12 text-right font-bold text-slate-700">3,895</span>
 </button>
 <button class="w-full flex items-center gap-3 group hover:opacity-90" onclick="filterReviews('4')">
-<span class="w-10 font-bold text-slate-800 text-left group-hover:text-emerald-600">4 ★</span>
+<span class="w-10 font-bold text-slate-800 text-left group-hover:text-emerald-600 vp-stars">4 ★</span>
 <div class="flex-1 h-2.5 bg-slate-200 rounded-full overflow-hidden">
 <div class="h-full bg-emerald-400 rounded-full" style="width: 9%"></div>
 </div>
 <span class="w-12 text-right font-bold text-slate-700">385</span>
 </button>
 <div class="w-full flex items-center gap-3 opacity-45">
-<span class="w-10 font-semibold text-slate-500 text-left">3 ★</span>
+<span class="w-10 font-semibold text-slate-500 text-left vp-stars">3 ★</span>
 <div class="flex-1 h-2 bg-slate-200 rounded-full"></div>
 <span class="w-12 text-right text-slate-500">0</span>
 </div>
 <div class="w-full flex items-center gap-3 opacity-45">
-<span class="w-10 font-semibold text-slate-500 text-left">2 ★</span>
+<span class="w-10 font-semibold text-slate-500 text-left vp-stars">2 ★</span>
 <div class="flex-1 h-2 bg-slate-200 rounded-full"></div>
 <span class="w-12 text-right text-slate-500">0</span>
 </div>
 <div class="w-full flex items-center gap-3 opacity-45">
-<span class="w-10 font-semibold text-slate-500 text-left">1 ★</span>
+<span class="w-10 font-semibold text-slate-500 text-left vp-stars">1 ★</span>
 <div class="flex-1 h-2 bg-slate-200 rounded-full"></div>
 <span class="w-12 text-right text-slate-500">0</span>
 </div>
@@ -787,7 +874,7 @@
 <!-- Free Shipping Banner -->
 <div class="bg-emerald-50 border-b border-emerald-100 px-6 py-2.5 text-xs font-bold text-emerald-800 flex items-center justify-between">
 <span>🚚 Free Express Shipping Unlocked</span>
-<span>✓</span>
+<span class="vp-check-accent">✓</span>
 </div>
 </div>
 <!-- Scrollable Cart Items Area -->
@@ -808,7 +895,7 @@
 <span class="font-extrabold text-base text-slate-950">Total</span>
 <span class="font-extrabold text-2xl text-slate-950" id="cart-subtotal">$0.00</span>
 </div>
-<a class="w-full flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white font-extrabold text-base py-4 rounded-2xl shadow-lg shadow-emerald-600/20 transition" href="https://buy.stripe.com/6oU14n6PH0XV8dN9Rc9sk04" id="cart-checkout-btn">
+<a class="w-full flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white font-extrabold text-base py-4 rounded-2xl shadow-lg shadow-emerald-600/20 transition vp-cta-primary" href="https://buy.stripe.com/6oU14n6PH0XV8dN9Rc9sk04" id="cart-checkout-btn">
 <span>Check Out Now</span>
 <span>→</span>
 </a>
@@ -824,7 +911,7 @@
 <div class="text-xs font-extrabold text-slate-950" id="mobile-label">2x VakuPack Pro (BOGO)</div>
 <div class="text-sm font-extrabold text-emerald-600" id="mobile-price">$194.99 <span class="text-xs text-slate-400 line-through">$309.98</span></div>
 </div>
-<button class="bg-emerald-600 text-white font-extrabold text-sm px-5 py-3 rounded-xl shadow-md" onclick="addSelectedBundleToCart()">
+<button class="bg-emerald-600 text-white font-extrabold text-sm px-5 py-3 rounded-xl shadow-md vp-cta-primary" onclick="addSelectedBundleToCart()">
             Add to Cart
         </button>
 </div>
