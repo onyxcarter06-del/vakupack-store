@@ -47,7 +47,6 @@
       }
     }
     </script>
-
 <style id="vakupack-conversion-theme">
         :root {
             --vp-bg: #FFFFFF;
@@ -129,6 +128,30 @@
         /* Authentic Warm Gold Review Stars */
         .vp-stars {
             color: var(--vp-gold) !important;
+        }
+    </style>
+
+<style id="vakupack-atc-green">
+        .vp-atc-green {
+            background-color: #16A34A !important;
+            background-image: none !important;
+            color: #FFFFFF !important;
+            border: 1px solid #16A34A !important;
+            box-shadow: 0 10px 24px -6px rgba(22, 163, 74, 0.34) !important;
+            font-weight: 800 !important;
+            transition: transform 0.16s ease, background-color 0.16s ease, box-shadow 0.16s ease !important;
+        }
+        .vp-atc-green:hover {
+            background-color: #15803D !important;
+            border-color: #15803D !important;
+            transform: translateY(-1px) !important;
+            box-shadow: 0 14px 28px -6px rgba(21, 128, 61, 0.40) !important;
+        }
+        .vp-atc-green:active {
+            transform: scale(0.985) !important;
+        }
+        .vp-atc-green * {
+            color: #FFFFFF !important;
         }
     </style>
 </head>
@@ -284,7 +307,7 @@
 </div>
 <!-- Dual Action Buttons: Add to Cart (Opens Pop-Out Cart) + Express Checkout -->
 <div class="grid sm:grid-cols-12 gap-3">
-<button class="sm:col-span-5 flex items-center justify-center gap-2 bg-slate-950 hover:bg-slate-800 text-white font-extrabold text-base py-4 px-5 rounded-2xl transition cursor-pointer vp-cta-primary" onclick="addSelectedBundleToCart()">
+<button class="sm:col-span-5 flex items-center justify-center gap-2 bg-slate-950 hover:bg-slate-800 text-white font-extrabold text-base py-4 px-5 rounded-2xl transition cursor-pointer vp-cta-primary vp-atc-green" onclick="addSelectedBundleToCart()">
 <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.2" viewbox="0 0 24 24">
 <path d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" stroke-linecap="round" stroke-linejoin="round"></path>
 </svg>
@@ -908,7 +931,7 @@
 <div class="text-xs font-extrabold text-slate-950" id="mobile-label">2x VakuPack Pro (BOGO)</div>
 <div class="text-sm font-extrabold text-red-600" id="mobile-price">$194.99 <span class="text-xs text-slate-400 line-through">$309.98</span></div>
 </div>
-<button class="bg-red-600 text-white font-extrabold text-sm px-5 py-3 rounded-xl shadow-md vp-cta-primary" onclick="addSelectedBundleToCart()">
+<button class="bg-red-600 text-white font-extrabold text-sm px-5 py-3 rounded-xl shadow-md vp-cta-primary vp-atc-green" onclick="addSelectedBundleToCart()">
             Add to Cart
         </button>
 </div>
